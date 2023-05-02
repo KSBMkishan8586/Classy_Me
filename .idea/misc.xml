@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/drawable/circular_image_bg.xml" value="0.147" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/drawable/custom_ans_bg.xml" value="0.1655" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/drawable/greenprogress.xml" value="0.157" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/drawable/lock_pw_icon.xml" value="0.139" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/drawable/next_btn_bg.xml" value="0.161" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/drawable/photo_icon.xml" value="0.157" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/drawable/rectangle_bg_grey.xml" value="0.161" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/drawable/upgrade_bg.xml" value="0.139" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_add_direction.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_age.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_alphabet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_animal.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_animal_type.xml" value="0.25" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_body_parts.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_clock_learn.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_clock_past.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_color.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_counting.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_counting_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_counting_note.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_counting_star.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_currency_country.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_currency_denomination.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_currency_exchange.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_currency_learn.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_date.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_direction.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_direction_six_relative.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_direction_swipe.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_direction_swipe_slider.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_fill_data.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_forgot.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_foundation_quiz.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_foundation_winner.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_fundamental__quiz__check_box.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_fundamental__quiz__match__following.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_fundamental__quiz__winner.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_fundamental_jumble_arrange.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_fundamental_quiz__start.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_fundamental_quiz_m_c_q.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_fundamental_quiz_touch_fill.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_fundamental_touch_the_word.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_gender.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_live_clock.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_memory_map_quiz.xml" value="0.11851851851851852" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_month.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_otp.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_payment.xml" value="0.25" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_permission.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_personality_video_player.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_profeciency.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_profile_update.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_signup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_single_color.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_situation_quiz.xml" value="0.18" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_video_player.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_webinar_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_welcome.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/activity_youtube_video.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/alert_and_freecoin_header.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/app_bar_activity_navigation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/bodypartbacka.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/bodypartbackb.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/bodypartdropa.xml" value="0.13489583333333333" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/bodypartdropb.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/content_activity_navigation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/custom_alert_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/custom_ans_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/detailed_report_lyt.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/drawer_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/feedback_lyt.xml" value="0.203125" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/foundation_basics_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/foundation_image_drag_drop.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/foundation_match_image.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/foundation_word_quiz_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_certificate.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_cocurri_report.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_crashcourse.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_detailed_report.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_foundation_basic.xml" value="0.2" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_foundations_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_freecoin.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_fundamental.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_fundamental_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_internal_exam.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_leaderboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_offline_level.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_offline_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_offline_stage.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_personality.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_progression_report.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_settings.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_shop.xml" value="0.22" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_situation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_toodle.xml" value="0.22" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_video_list.xml" value="0.1390625" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/fragment_workbook.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/next_previous_button.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/offline_stage_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/personality_video_list.xml" value="0.10277777777777777" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/profession_row.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/shop_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/slide_alphabet_quiz.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/slide_mcq_quiz.xml" value="0.22" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/slider_fundamental_course.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/toast.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/toodle_list.xml" value="0.22" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/upgrade_courses_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohdg/OneDrive/Desktop/gauri/16_Nov-2022/ClassyMe/app/src/main/res/layout/video_list.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

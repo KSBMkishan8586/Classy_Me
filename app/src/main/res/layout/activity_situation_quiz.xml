@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.ksbm.ontu.situation.adapter.SituationSentenseWordAdapter" />
+
+        <variable
+            name="adapter1"
+            type="com.ksbm.ontu.situation.adapter.SituationSentenseWordAdapter" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/back_arrow"
+                app:tint="@color/black">
+
+            </ImageView>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_i_button"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/i_button">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Noun"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_sentence_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="normal">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_ques_name_en"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="normal">
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_ques_name_hi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="normal"
+                android:drawableTint="#1F83B6"
+                app:drawableStartCompat="@drawable/speaker_icon1">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_below="@+id/linear_layout"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/text_list"-->
+<!--                    android:layout_width="@dimen/_120sdp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_marginStart="@dimen/_5sdp"-->
+<!--                    android:divider="@android:color/transparent"-->
+<!--                    android:dividerHeight="10.0sp" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/text_list"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:adapter="@{adapter}"
+                    android:orientation="vertical"
+                    android:scrollbars="none"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/text_list1"-->
+<!--                    android:layout_width="@dimen/_120sdp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:divider="@android:color/transparent"-->
+<!--                    android:dividerHeight="10.0sp" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/text_list1"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:adapter="@{adapter1}"
+                    android:orientation="vertical"
+                    android:scrollbars="none"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_45sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_previous"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/rectangle_bg_grey"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:backgroundTint="@color/red_200"
+                android:text="Previous"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="normal">
+
+            </TextView>
+
+            <TextView
+                android:backgroundTint="@color/red_200"
+                android:id="@+id/tv_next"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="@drawable/rectangle_bg_grey"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="normal">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

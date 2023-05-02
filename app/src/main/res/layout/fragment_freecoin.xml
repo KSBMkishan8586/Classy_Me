@@ -1,0 +1,93 @@
+<layout>
+    <data>
+
+        <variable
+            name="myAdapter"
+            type="com.ksbm.ontu.free_coin.FreeCoin_Adapter" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_screen"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+
+<!--        <androidx.percentlayout.widget.PercentRelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+            <RelativeLayout
+                android:id="@+id/rlScreen"
+                android:layout_width="match_parent"
+                android:background="@drawable/free_coin_fragment_bg"
+                android:gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_height="@dimen/_350sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/top_layout">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:id="@+id/Goback"
+                        android:src="@drawable/ic_close"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/circle_red"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_18sdp"
+                        android:id="@+id/tv_next"
+                        android:textColor="@color/brown"
+                        android:text="@string/free_coin"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+<!--                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--                    android:layout_below="@+id/top_layout"-->
+<!--                    android:id="@+id/swiperefresh"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+                    <LinearLayout
+                        android:layout_below="@+id/top_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/freecoin_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:adapter="@{myAdapter}"
+                            android:focusable="false"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+<!--                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+
+            </RelativeLayout>
+
+<!--        </androidx.percentlayout.widget.PercentRelativeLayout>-->
+    </LinearLayout>
+</layout>

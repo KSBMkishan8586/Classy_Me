@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.ksbm.ontu.profile.model.MyCertificate.MyCertificateResponse" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_margin="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/iv_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:src="@drawable/certificate_image"
+                android:scaleType="fitXY">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_download"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:src="@drawable/ic_download"></ImageView>
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/iv_eight_dire_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/yellow"
+                android:shadowRadius="20"
+                android:text="Upper"
+                android:textColor="@color/red"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:src="@drawable/chest"/>
+
+            <TextView
+                android:id="@+id/tv_Ha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="100dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Soulder"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="190dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Arm"
+
+                android:textColor="@color/medium_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_He"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="230dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:visibility="gone"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Ear"
+
+                android:textColor="@color/maroon"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hd"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="300dp"
+                android:visibility="gone"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Lip"
+
+                android:textColor="@color/red_btn_bg_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_Hc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="300dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Back"
+
+                android:textColor="@color/yellow"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="120dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Neck"
+
+                android:textColor="@color/violet"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

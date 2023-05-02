@@ -1,0 +1,82 @@
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="myAdapter"
+            type="com.ksbm.ontu.free_coin.FreeCoin_Adapter" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_10sdp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/comment_screen">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp">
+
+            <RelativeLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Goback"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:src="@drawable/ic_close"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="normal" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pay_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    app:cardElevation="@dimen/_10sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/_15sdp"
+                    app:cardBackgroundColor="@color/green">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pay Now"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--    <data>-->
+
+    <!--        <variable-->
+    <!--            name="adapter"-->
+    <!--            type="com.ksbm.ontu.practice_offline.adapter.Offline_Stage_Adapter" />-->
+
+    <!--    </data>-->
+
+<!--    android:background="@drawable/bg_offline_level1"-->
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#070707"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_90sdp">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/snake_img1"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_level_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.074"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.228">
+
+                    <ImageView
+                        android:id="@+id/iv_level2"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/offline_level_button" />
+
+                    <TextView
+                        android:id="@+id/tv_level2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="2"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/lp2"
+                        android:layout_width="40dp"
+                        android:visibility="gone"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/man"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/lpideal"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/man"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/rel_level_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.05"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_level_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.726"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.175">
+
+
+                    <ImageView
+                        android:id="@+id/iv_level1"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/offline_level_button" />
+
+
+                    <TextView
+                        android:id="@+id/tv_level1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="1"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/lp1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/man"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_level_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.394">
+
+                    <ImageView
+                        android:id="@+id/iv_level3"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/offline_level_button" />
+
+                    <TextView
+                        android:id="@+id/tv_level3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="3"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/lp3"
+                        android:layout_width="40dp"
+                        android:visibility="gone"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/man"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_level_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.925"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_level4"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/offline_level_button" />
+
+                    <TextView
+                        android:id="@+id/tv_level4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="4"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/lp4"
+                        android:layout_width="40dp"
+                        android:visibility="gone"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/man"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_level_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.375"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.637">
+
+                    <ImageView
+                        android:id="@+id/iv_level5"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/offline_level_button" />
+
+                    <TextView
+                        android:id="@+id/tv_level5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="5"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/lp5"
+                        android:layout_width="40dp"
+                        android:visibility="gone"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/man"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_level_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.462"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.868">
+
+                    <ImageView
+                        android:id="@+id/iv_level6"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/offline_level_button" />
+
+                    <TextView
+                        android:id="@+id/tv_level6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="6"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="40dp"
+                        android:id="@+id/lp6"
+                        android:visibility="gone"
+                        android:layout_height="40dp"
+                        app:civ_border_width="2dp"
+                        android:layout_centerInParent="true"
+                        app:civ_border_color="@color/white"
+                        android:src="@drawable/man"/>
+
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="128dp"
+                android:layout_height="183dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_above="@+id/rel_stage"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/offline_stage_door" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_stage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/offline_stage_button"></ImageView>
+
+                    <TextView
+                        android:id="@+id/tv_stage_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Stage-1"
+                        android:drawableStart="@drawable/back_arrow"
+                        android:textAllCaps="true"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"></TextView>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

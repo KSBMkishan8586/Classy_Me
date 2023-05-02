@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="personalityAdapter"
+            type="com.ksbm.ontu.fundamental.adapter.FundamentalJumbleWord_Adapter" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/back_arrow"
+                app:tint="@color/black">
+
+            </ImageView>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_i_button"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/i_button">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Foundation"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_coin"
+                android:layout_width="@dimen/_46sdp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toEndOf="@id/tv_header"
+                android:src="@drawable/start_video" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/foundation_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_button"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="5dp" />
+
+        <include
+            android:id="@+id/layout_button"
+            layout="@layout/next_previous_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"></include>
+
+
+    </RelativeLayout>
+</layout>

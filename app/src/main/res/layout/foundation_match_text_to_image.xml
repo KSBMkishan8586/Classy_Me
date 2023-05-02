@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/rel_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            layout="@layout/user_ontu_coin_layout">
+        </include>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_workbookname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_toolbar"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Workbook 1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_workbookname"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/card_bg_gold"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/tv_quiz_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="Noun"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_layout"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/card_bg_gold"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <com.ksbm.ontu.foundation.ArrowLayout
+                    android:id="@+id/arrow_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/text_row1"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/circle_fill"
+                        android:gravity="center"
+                        android:text="dddd"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_below="@+id/text_row1"
+                        android:id="@+id/text_row2"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_fill"
+                        android:gravity="center"
+                        android:text="rrrr"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_below="@+id/text_row2"
+                        android:id="@+id/text_row3"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_fill"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_below="@+id/text_row3"
+                        android:id="@+id/text_row4"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_fill"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_below="@+id/text_row4"
+                        android:id="@+id/text_row5"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_fill"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+                    <RelativeLayout
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/rel_row1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_row1"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ankit" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/rel_row1"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/rel_row2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_row2"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ankit" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/rel_row2"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/rel_row3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_row3"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:src="@drawable/ankit" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/rel_row3"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/rel_row4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_row4"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ankit" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/rel_row4"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/rel_row5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_row5"
+                            android:scaleType="fitXY"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:src="@drawable/ankit" />
+                    </RelativeLayout>
+
+                </com.ksbm.ontu.foundation.ArrowLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>

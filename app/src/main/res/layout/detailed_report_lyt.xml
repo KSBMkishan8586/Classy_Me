@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/sky_blue"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Time"
+            android:textAllCaps="true"
+            android:background="@drawable/line_border1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_ttl_coins"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:background="@drawable/line_border1"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_earn_coins"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:background="@drawable/line_border1"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="50%"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:background="@drawable/line_border1"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

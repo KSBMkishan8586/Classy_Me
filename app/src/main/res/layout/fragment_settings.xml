@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_bg"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rel_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_width="@dimen/_32sdp"-->
+                    <!--                    android:layout_height="@dimen/_32sdp"-->
+                    <!--                    android:layout_alignParentStart="true"-->
+                    <!--                    android:layout_centerVertical="true"-->
+                    <!--                    android:layout_marginEnd="@dimen/_10sdp"-->
+                    <!--                    android:scaleType="fitXY"-->
+                    <!--                    android:src="@drawable/menu_icon">-->
+
+                    <!--                </ImageView>-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/settings"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_width="@dimen/_32sdp"-->
+                    <!--                    android:layout_height="@dimen/_32sdp"-->
+                    <!--                    android:layout_alignParentEnd="true"-->
+                    <!--                    android:layout_centerVertical="true"-->
+                    <!--                    android:layout_marginEnd="@dimen/_10sdp"-->
+                    <!--                    android:scaleType="fitXY"-->
+                    <!--                    android:src="@drawable/start_video">-->
+
+                    <!--                </ImageView>-->
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rel_toolbar"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/upgrade_tab"
+                        android:layout_below="@+id/rel_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginHorizontal="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/upgrade_bg"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_7sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/upgrade_course"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:text="@string/upgrade_course"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/update_prfl_cv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/_12sdp"
+                        app:cardBackgroundColor="@color/color_blue2"
+                        app:cardCornerRadius="@dimen/_8sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text="@string/update_profile"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/rel_update_profile"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/rectangle_bg_white">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/view"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:elevation="@dimen/_12sdp"
+                        app:cardBackgroundColor="@color/color_blue2"
+                        app:cardCornerRadius="@dimen/_8sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/rel_lang_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text="@string/language"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:id="@+id/rel_lang"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/rectangle_bg_white">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/change_language"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:elevation="@dimen/_12sdp"
+                        app:cardBackgroundColor="@color/color_blue2"
+                        app:cardCornerRadius="@dimen/_8sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp">
+
+
+                            <TextView
+                                android:id="@+id/soundeffect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text="@string/sound_effet"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/rectangle_bg_white">
+
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:id="@+id/switch_sound_effect"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:checked="true"
+                                    android:switchMinWidth="@dimen/_76sdp"
+                                    android:theme="@style/ToggleSwitchTheme" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_15sdp"-->
+<!--                        android:elevation="@dimen/_12sdp"-->
+<!--                        app:cardBackgroundColor="@color/color_blue2"-->
+<!--                        app:cardCornerRadius="@dimen/_8sdp">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="@dimen/_45sdp">-->
+
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentStart="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_gravity="center_vertical"-->
+<!--                                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                                android:text="@string/subtitle"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="@dimen/_14sdp"-->
+<!--                                android:textStyle="bold">-->
+
+<!--                            </TextView>-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="@dimen/_60sdp"-->
+<!--                                android:layout_height="@dimen/_30sdp"-->
+<!--                                android:layout_alignParentEnd="true"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                                android:background="@drawable/rectangle_bg_white">-->
+
+
+<!--                                <androidx.appcompat.widget.SwitchCompat-->
+<!--                                    android:id="@+id/switch_subtitle"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:checked="true"-->
+<!--                                    android:switchMinWidth="@dimen/_76sdp"-->
+<!--                                    android:theme="@style/ToggleSwitchTheme" />-->
+
+<!--                            </RelativeLayout>-->
+
+
+<!--                        </RelativeLayout>-->
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_15sdp"-->
+<!--                        android:elevation="@dimen/_12sdp"-->
+<!--                        app:cardBackgroundColor="@color/color_blue2"-->
+<!--                        app:cardCornerRadius="@dimen/_8sdp">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:id="@+id/rel_chat_view"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="@dimen/_45sdp">-->
+
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentStart="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_gravity="center_vertical"-->
+<!--                                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                                android:text="@string/chat_message"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="@dimen/_14sdp"-->
+<!--                                android:textStyle="bold">-->
+
+<!--                            </TextView>-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="@dimen/_60sdp"-->
+<!--                                android:layout_height="@dimen/_30sdp"-->
+<!--                                android:layout_alignParentEnd="true"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                                android:background="@drawable/rectangle_bg_white">-->
+
+
+<!--                                <androidx.appcompat.widget.SwitchCompat-->
+<!--                                    android:id="@+id/switch_chat"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:checked="true"-->
+<!--                                    android:switchMinWidth="@dimen/_76sdp"-->
+<!--                                    android:theme="@style/ToggleSwitchTheme" />-->
+
+<!--                            </RelativeLayout>-->
+
+
+<!--                        </RelativeLayout>-->
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_15sdp"-->
+<!--                        android:elevation="@dimen/_12sdp"-->
+<!--                        app:cardBackgroundColor="@color/color_blue2"-->
+<!--                        app:cardCornerRadius="@dimen/_8sdp">-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:id="@+id/rel_online_view_friend"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="@dimen/_45sdp">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_alignParentStart="true"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:layout_gravity="center_vertical"-->
+<!--                                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                                android:text="@string/show_online_status"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="@dimen/_14sdp"-->
+<!--                                android:textStyle="bold">-->
+
+<!--                            </TextView>-->
+
+<!--                            <RelativeLayout-->
+<!--                                android:layout_width="@dimen/_60sdp"-->
+<!--                                android:layout_height="@dimen/_30sdp"-->
+<!--                                android:layout_alignParentEnd="true"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                                android:background="@drawable/rectangle_bg_white">-->
+
+
+<!--                                <androidx.appcompat.widget.SwitchCompat-->
+<!--                                    android:id="@+id/switch_show_online"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    android:checked="true"-->
+<!--                                    android:switchMinWidth="@dimen/_56sdp"-->
+<!--                                    android:theme="@style/ToggleSwitchTheme" />-->
+
+<!--                            </RelativeLayout>-->
+
+
+<!--                        </RelativeLayout>-->
+<!--                    </androidx.cardview.widget.CardView>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/rect_blue_bg2"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:text="@string/get_challenges"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:gravity="center">
+
+                            <RelativeLayout
+                                android:id="@+id/rel_switch_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentStart="true"
+                                android:background="@drawable/rectangle_bg_white">
+
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:checked="true"
+                                    android:paddingStart="@dimen/_2sdp"
+                                    android:paddingEnd="@dimen/_2sdp"
+                                    android:switchMinWidth="@dimen/_56sdp"
+                                    android:text="@string/from_friend_only"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:theme="@style/ToggleSwitchTheme" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/rectangle_bg_white">
+
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:checked="true"
+                                    android:paddingStart="@dimen/_2sdp"
+                                    android:paddingEnd="@dimen/_2sdp"
+                                    android:switchMinWidth="@dimen/_56sdp"
+                                    android:text="@string/from_every_one"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:theme="@style/ToggleSwitchTheme" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:elevation="@dimen/_12sdp"
+                        app:cardBackgroundColor="@color/color_blue2"
+                        app:cardCornerRadius="@dimen/_8sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text="@string/notification_while"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/rectangle_bg_white">
+
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:id="@+id/switch_noti_allow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:checked="true"
+                                    android:switchMinWidth="@dimen/_76sdp"
+                                    android:theme="@style/ToggleSwitchTheme" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:elevation="@dimen/_12sdp"
+                        app:cardBackgroundColor="@color/color_blue2"
+                        app:cardCornerRadius="@dimen/_8sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text="@string/help_support"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:id="@+id/rel_support_view"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/rectangle_bg_white">
+
+                                <TextView
+                                    android:layout_width="35dp"
+                                    android:layout_height="28dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/whatsapp_logo"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:elevation="@dimen/_12sdp"
+                        app:cardBackgroundColor="@color/color_blue2"
+                        app:cardCornerRadius="@dimen/_8sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text="@string/privacy"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:id="@+id/rel_privacy"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/rectangle_bg_white">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/view"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"></TextView>
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:elevation="@dimen/_12sdp"
+                        app:cardBackgroundColor="@color/color_blue2"
+                        app:cardCornerRadius="@dimen/_8sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text="@string/feedback"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_feedback"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/rectangle_bg_white">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/add"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        app:cardBackgroundColor="@color/color_blue2"
+                        app:cardCornerRadius="@dimen/_8sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text="@string/logout"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:id="@+id/rel_logout"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:background="@drawable/rectangle_bg_white">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="f / gmail"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <!--            <ImageView-->
+                <!--                android:id="@+id/iv_back"-->
+                <!--                android:layout_width="@dimen/_40sdp"-->
+                <!--                android:layout_height="@dimen/_40sdp"-->
+                <!--                android:layout_below="@+id/ll_list"-->
+                <!--                android:layout_marginStart="@dimen/_20sdp"-->
+                <!--                android:layout_alignParentBottom="true"-->
+                <!--                android:scaleType="fitXY"-->
+                <!--                android:src="@drawable/back_button">-->
+
+                <!--            </ImageView>-->
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

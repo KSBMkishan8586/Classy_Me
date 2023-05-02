@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <include
+                        android:id="@+id/header"
+                        layout="@layout/alert_and_freecoin_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/iv_back"
+                    android:layout_below="@+id/rel_toolbar"
+                    android:weightSum="1">
+
+
+                    <ImageView
+                        android:id="@+id/iv_girl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_70sdp"
+                        android:layout_marginBottom="@dimen/_25sdp"
+                        android:layout_weight="0.5"
+
+                        android:src="@drawable/girl_image_learn">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rel_learn"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_42sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:background="@drawable/learn_button">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/candara"
+                                android:gravity="center"
+                                android:text="@string/learn"
+                                android:textAlignment="center"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:visibility="gone"
+                            android:id="@+id/rel_other"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_42sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/learn_button">
+
+                            <TextView
+                                android:id="@+id/tv_type_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/candara"
+                                android:gravity="center"
+                                android:text="@string/drawing"
+                                android:textAlignment="center"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rel_activity"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_42sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/activity_button">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/candara"
+                                android:gravity="center"
+                                android:text="@string/activity"
+                                android:textAlignment="center"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/back_button">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

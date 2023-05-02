@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.ksbm.ontu.foundation.adapter.AnimalTypeAdapter" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/fullScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <include
+                        android:id="@+id/header"
+                        layout="@layout/alert_and_freecoin_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/rel_mid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_toolbar"
+                    android:orientation="vertical">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclelist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adapter="@{adapter}"
+                        android:orientation="vertical"
+                        android:scrollbars="none"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back_button">
+
+        </ImageView>
+
+    </RelativeLayout>
+</layout>

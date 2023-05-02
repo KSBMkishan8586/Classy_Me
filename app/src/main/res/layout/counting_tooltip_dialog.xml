@@ -1,0 +1,67 @@
+<layout>
+    <data>
+        <variable
+            name="myAdapter"
+            type="com.ksbm.ontu.free_coin.FreeCoin_Adapter" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_screen"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+
+        <RelativeLayout
+            android:layout_width="@dimen/_160sdp"
+            android:background="@drawable/custom_ans_bg"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="@dimen/_120sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/top_layout">
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_32sdp"-->
+<!--                    android:layout_height="@dimen/_32sdp"-->
+<!--                    android:id="@+id/Goback"-->
+<!--                    android:src="@drawable/ic_close"-->
+<!--                    android:layout_margin="@dimen/_5sdp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    app:tint="@color/black" />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_32sdp"
+                    android:id="@+id/tv_msg"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                   />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_24sdp"
+                    android:id="@+id/tv_counting_text"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                 />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

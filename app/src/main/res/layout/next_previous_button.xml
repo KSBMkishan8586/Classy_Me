@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_previous"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/button_bg_foundation"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Previous"
+            android:textColor="@color/black"
+            android:fontFamily="@font/futu_md"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/button_bg_foundation"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Next"
+            android:textColor="@color/black"
+            android:fontFamily="@font/futu_md"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal">
+
+
+
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</layout>

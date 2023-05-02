@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="0.33"
+                android:id="@+id/tv_digit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="10"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_32sdp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_weight="0.33"
+                android:id="@+id/tv_symbol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="R"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/_32sdp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_weight="0.33"
+                android:id="@+id/tv_currency_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="(INR)"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/_24sdp"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:src="@drawable/common_currency_icon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Currency"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tv_speak"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/rectangle_bg_grey"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Record"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_slow"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/rectangle_bg_grey"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Slow"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_check"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/rectangle_bg_grey"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Self Check"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_get_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_userside_coin_img"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:rotation="70"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            app:srcCompat="@drawable/move_coins_right" />
+
+        <TextView
+            android:id="@+id/tv_user_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/_5sdp"
+            android:text="+ 100"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/_50sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="Touch the number &amp; learn time in detail"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_0_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="12 O' Clock"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_halfpast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_clock"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Half Past"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rel_clock"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_clock"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/clock_gif"
+            android:visibility="gone" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/watch" />
+
+
+        <ImageView
+            android:id="@+id/CI12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/tweleve" />
+
+        <ImageView
+            android:id="@+id/CI6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/six" />
+
+        <ImageView
+            android:id="@+id/CI3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/three" />
+
+        <ImageView
+            android:id="@+id/CI9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/nine" />
+
+
+        <ImageView
+            android:id="@+id/CI1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/CI12"
+            android:src="@drawable/one" />
+
+        <ImageView
+            android:id="@+id/CI2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="90dp"
+            android:layout_toRightOf="@id/CI12"
+            android:src="@drawable/two" />
+
+
+        <ImageView
+            android:id="@+id/CI10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@id/CI12"
+            android:src="@drawable/ten" />
+
+        <ImageView
+            android:id="@+id/CI11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/CI12"
+            android:src="@drawable/eleven" />
+
+
+        <ImageView
+            android:id="@+id/CI8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@id/CI6"
+            android:src="@drawable/eight" />
+
+
+        <ImageView
+            android:id="@+id/CI4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="210dp"
+            android:layout_toRightOf="@id/CI6"
+            android:src="@drawable/four" />
+
+
+        <ImageView
+            android:id="@+id/CI7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/CI6"
+            android:src="@drawable/seven" />
+
+
+        <ImageView
+            android:id="@+id/CI5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="255dp"
+            android:layout_toRightOf="@id/CI6"
+            android:src="@drawable/five" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

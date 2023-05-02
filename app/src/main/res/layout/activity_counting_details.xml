@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="personalityAdapter"
+            type="com.ksbm.ontu.foundation.adapter.Counting_Adapter" />
+
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/fullScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <include
+                        android:id="@+id/header"
+                        layout="@layout/alert_and_freecoin_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/iv_back"
+                    android:layout_below="@+id/rel_toolbar"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rel_count_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adapter="@{personalityAdapter}"
+                        android:scrollbars="none"
+
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"></androidx.recyclerview.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/back_button"
+                    android:visibility="gone"></ImageView>
+
+
+                <TextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:background="@drawable/rectangle_bg_grey"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

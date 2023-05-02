@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/whitebackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/ll_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/_5sdp">
+
+
+            <TextView
+                style="@style/text_12_black"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:background="@drawable/bg_line_border"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/alerts"
+                android:textSize="@dimen/_10sdp" />
+
+            <ImageView
+                android:id="@+id/iv_alert"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/alerts_icon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toStartOf="@+id/ll_free_coin"
+            android:layout_toEndOf="@+id/ll_alert"
+            android:gravity="center"
+            android:text="24-Hour Clock"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/ll_free_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:background="@drawable/bg_line_border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:srcCompat="@drawable/free_coins" />
+
+            <TextView
+                android:id="@+id/tv_free_coin"
+                style="@style/text_12_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:text="Free Coins"
+                android:textSize="@dimen/_10sdp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+    <com.ksbm.ontu.foundation.time.live_clock.AnalogClock
+        android:id="@+id/analogClock"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/analogReadout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Kvart i sju"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="30sp"-->
+<!--        android:lines="2"-->
+<!--        android:gravity="top"-->
+<!--        android:enabled="false"-->
+<!--        tools:ignore="RtlCompat" />-->
+
+    <Button
+        android:id="@+id/digitalClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:enabled="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="HH:MM"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/digitalReadout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:enabled="false"
+        android:text="Arton fyrtiofem"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="30sp"
+        android:layout_marginBottom="8dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/back_button">
+
+    </ImageView>
+
+</LinearLayout>

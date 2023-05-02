@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".progression_report.DetailedReportFrag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    app:cardBackgroundColor="@color/sky_blue"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_8sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerInParent="true">
+
+
+                        <ImageView
+                            android:id="@+id/iv_couse_image"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@+id/tv_title"
+                            android:src="@drawable/fundamenta_lworkbook">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:text="Detailed Report"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp"
+                            android:textStyle="normal">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <RelativeLayout
+                    android:id="@+id/rel_internal_exam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_15sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_workbook_title"
+                        android:background="@drawable/progression_square"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tv_score_calculator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:text="@string/workbook"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="normal" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_workbook_title"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_35sdp"
+                                android:src="@drawable/scoreboard_blue"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0">
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/tv_workbook_obtain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="64dp"
+                                android:layout_marginBottom="12dp"
+                                android:text="0.00%"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="normal"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                                app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+                            <TextView
+                                android:id="@+id/tv_workbook_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="255dp"
+                                android:layout_marginEnd="69dp"
+                                android:layout_marginBottom="12dp"
+                                android:text="100%"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="normal"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toEndOf="@+id/tv_workbook_obtain"
+                                app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@drawable/progression_square"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@string/score_calculator"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:background="@color/color_blue1"
+                        >
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/particular"
+                            android:textAllCaps="true"
+                            android:background="@drawable/line_border1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Total Coins"
+                            android:textAllCaps="true"
+                            android:background="@drawable/line_border1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Earned Coins"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/score"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/report_rv"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/sky_blue"
+                        android:weightSum="4"
+                        >
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/total"
+                            android:textAllCaps="true"
+                            android:background="@drawable/line_border1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/total_coins"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/total_coin_earned"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=""
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_total_obtain"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="0%"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border_green"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/back_button"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

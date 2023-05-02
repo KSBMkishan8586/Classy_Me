@@ -1,0 +1,325 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_close"-->
+<!--            android:layout_width="@dimen/_24sdp"-->
+<!--            android:layout_height="@dimen/_24sdapis/home/upcoming_eventp"-->
+<!--            android:layout_gravity="end"-->
+<!--            app:srcCompat="@drawable/ic_close"-->
+<!--            app:tint="@color/brown" />-->
+
+        <LinearLayout
+            android:id="@+id/ll_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_63sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginBottom="6dp"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/bg_alert">
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_alert"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="-10dp"
+                        android:background="@drawable/circular_image_bg"
+                        app:srcCompat="@drawable/alert_error" />
+
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/alert_icon2"-->
+<!--                        android:layout_width="@dimen/_58sdp"-->
+<!--                        android:layout_height="@dimen/_58sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:visibility="visible"-->
+<!--                        app:civ_border_width="4dp"-->
+<!--                        app:civ_border_color="@color/brown"-->
+<!--                        android:src="@color/transparent"/>-->
+
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/alert_icon"-->
+<!--                        android:layout_width="@dimen/_58sdp"-->
+<!--                        android:layout_height="@dimen/_58sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:padding="1dp"-->
+<!--                        android:src="@drawable/alert_error"-->
+<!--                        android:visibility="visible" />-->
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_toRightOf="@+id/rl">
+
+
+                    <TextView
+                        style="@style/text_24_bold_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:text="Notification Alert !"
+                        android:textColor="@color/brown"
+                        android:textSize="28sp">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="X"
+            android:layout_margin="@dimen/_2sdp"
+            android:paddingVertical="@dimen/_1sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            android:background="@drawable/round_bg_count"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@id/ll_report"
+            android:background="@drawable/rect_alert_bg_bac"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp">
+                <TextView
+                    android:id="@+id/tv_updates"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/round_box"
+                    android:gravity="center"
+                    android:backgroundTint="@color/yellow"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/updates"
+                    android:textColor="@color/brown"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_update_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/round_bg_count"
+                        android:backgroundTint="@color/red"
+                        android:padding="@dimen/_2sdp"
+                        android:text="10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_7sdp"
+                        android:textStyle="normal" />
+            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp">
+                <RelativeLayout
+                    android:id="@+id/rlNotice"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/yellow"
+                    android:background="@drawable/round_box"
+                    android:layout_margin="@dimen/_5sdp">
+
+
+                    <TextView
+                        android:id="@+id/tv_noticeboard"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:text="Notice\nBoard"
+                        android:textColor="@color/brown"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv_noticeboard_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="10"
+                        android:padding="@dimen/_2sdp"
+                        android:backgroundTint="@color/red"
+                        android:background="@drawable/round_bg_count"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_7sdp"
+                        android:textStyle="normal"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/yellow"
+                    android:background="@drawable/round_box"
+                    android:layout_margin="@dimen/_5sdp">
+
+
+                    <TextView
+                        android:id="@+id/tv_calendar"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:text="@string/calendar"
+                        android:textColor="@color/brown"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/tv_calendar"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_calendar_24"
+                        app:tint="@color/black" />
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_webinar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_bg_green_alert"
+                    android:backgroundTint="@color/lime_green"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_alet_webinar"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/alerts_icon" />
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Join Webinar"
+                        android:textColor="@color/brown"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold"
+                        android:typeface="monospace">
+
+                    </TextView>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_webinar_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/round_bg_count"
+                    android:backgroundTint="@color/red"
+                    android:padding="@dimen/_2sdp"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7sdp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</layout>

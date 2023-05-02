@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="@string/progression_report"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    app:cardBackgroundColor="@color/sky_blue"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_8sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerInParent="true">
+
+
+                        <ImageView
+                            android:id="@+id/iv_couse_image"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@+id/tv_title"
+                            android:src="@drawable/fundamenta_lworkbook">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:text="Co-Curricular Activity"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:id="@+id/rel_internal_exam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_15sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_practice_title"
+                        android:background="@drawable/progression_square"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tv_practice_speaking_tab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/practice_offline"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="normal" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_practice_title"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_35sdp"
+                                android:src="@drawable/scoreboard_blue"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0">
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/tv_practice_speaking_obtain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="64dp"
+                                android:layout_marginBottom="12dp"
+                                android:text="80.00%"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="normal"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                                app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+                            <TextView
+                                android:id="@+id/tv_practice_speaking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="255dp"
+                                android:layout_marginEnd="69dp"
+                                android:layout_marginBottom="12dp"
+                                android:text="100%"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="normal"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toEndOf="@+id/tv_practice_speaking_obtain"
+                                app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_interna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_15sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_personality_title"
+                        android:background="@drawable/progression_square"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tv_personality_development_tab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Personality\nDevelopment"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="normal" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_personality_title"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_35sdp"
+                                android:src="@drawable/scoreboard_blue"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0">
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/tv_personality_development_obtain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="64dp"
+                                android:layout_marginBottom="12dp"
+                                android:text="80.00%"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="normal"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+                                app:layout_constraintStart_toStartOf="@+id/imageView1" />
+
+                            <TextView
+                                android:id="@+id/tv_personality_development"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="255dp"
+                                android:layout_marginEnd="69dp"
+                                android:layout_marginBottom="12dp"
+                                android:text="100%"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="normal"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView1"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toEndOf="@+id/tv_personality_development_obtain"
+                                app:layout_constraintStart_toStartOf="@+id/imageView1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rel_situation_title"
+                    android:background="@drawable/progression_square"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_40sdp"
+                   android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/score_calculator"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:background="@color/color_blue1"
+                        >
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/particular"
+                            android:textAllCaps="true"
+                            android:background="@drawable/line_border1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/score"
+                            android:textAllCaps="true"
+                            android:background="@drawable/line_border1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/weightage"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/marks_obtained"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/sky_blue"
+                        android:weightSum="4"
+                        >
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/practice_offline"
+                            android:textAllCaps="true"
+                            android:background="@drawable/line_border1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_practice_speaking_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0%"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_practice_speaking_weightage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="60%"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_practice_speaking_marks_obtain"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/_0_00"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/sky_blue"
+                        android:weightSum="4"
+                        >
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/personality_dev"
+                            android:textAllCaps="true"
+                            android:background="@drawable/line_border1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_personality_development_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0%"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_personality_development_weightage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="25%"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_personality_development_marks_obtain"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="50%"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/sky_blue"
+                        android:weightSum="4"
+                        >
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/total"
+                            android:textAllCaps="true"
+                            android:background="@drawable/line_border1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/total_score_obtain"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_total_weightage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="100%"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border1"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_total_marks_obtain"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="50%"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:background="@drawable/line_border_green"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:src="@drawable/back_button">
+                </ImageView>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>

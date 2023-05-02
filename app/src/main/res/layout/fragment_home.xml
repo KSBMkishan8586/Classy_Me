@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:id="@+id/frame_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_bg"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_tool"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp">
+
+                        <com.skydoves.elasticviews.ElasticImageView
+                            android:id="@+id/iv_setting_menu"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_36sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/menu_icon"
+                            app:imageView_duration="300"
+                            app:imageView_scale="0.7">
+
+                        </com.skydoves.elasticviews.ElasticImageView>
+
+                        <com.skydoves.elasticviews.ElasticImageView
+                            android:id="@+id/ivCoin"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_36sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:src="@drawable/start_video"
+                            app:imageView_duration="300"
+                            app:imageView_scale="0.7">
+
+                        </com.skydoves.elasticviews.ElasticImageView>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rel_tool"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_18sdp"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_marginEnd="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_18sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <!--                        <androidx.cardview.widget.CardView-->
+                        <!--                            android:id="@+id/card_fundamental"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginStart="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginEnd="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginBottom="@dimen/_10sdp"-->
+                        <!--                            app:cardCornerRadius="@dimen/_8sdp"-->
+                        <!--                            app:cardElevation="@dimen/_12sdp">-->
+
+
+                        <com.skydoves.elasticviews.ElasticLayout
+                            android:id="@+id/card_crash_course"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_margin="@dimen/_10sdp"
+                            app:layout_duration="300"
+                            app:layout_scale="0.95">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_70sdp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_70sdp"
+                                    android:background="@drawable/kidslearning_button">
+
+                                    <!--                                    <androidx.cardview.widget.CardView-->
+                                    <!--                                        android:layout_width="match_parent"-->
+                                    <!--                                        android:layout_height="match_parent"-->
+                                    <!--                                        android:layout_margin="@dimen/_7sdp"-->
+                                    <!--                                        app:cardBackgroundColor="@color/goldenrod"-->
+                                    <!--                                        app:cardCornerRadius="@dimen/_8sdp"-->
+                                    <!--                                        app:cardElevation="@dimen/_12sdp">-->
+
+                                    <TextView
+                                        android:id="@+id/tv_crashcourse_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:paddingStart="@dimen/_15sdp"
+                                        android:text="@string/crash_course"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textStyle="bold">
+
+                                    </TextView>
+
+                                    <!--                                    </androidx.cardview.widget.CardView>-->
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:src="@drawable/fundamenta_lworkbook">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+                        </com.skydoves.elasticviews.ElasticLayout>
+
+
+                        <com.skydoves.elasticviews.ElasticLayout
+                            android:id="@+id/card_fundamental"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_margin="@dimen/_10sdp"
+                            app:layout_duration="300"
+                            app:layout_scale="0.95">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_70sdp"
+                                android:background="@drawable/fundamental_worksheetbtn">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_70sdp">
+
+                                    <!--                                    <androidx.cardview.widget.CardView-->
+                                    <!--                                        android:layout_width="match_parent"-->
+                                    <!--                                        android:layout_height="match_parent"-->
+                                    <!--                                        android:layout_margin="@dimen/_7sdp"-->
+                                    <!--                                        app:cardCornerRadius="@dimen/_8sdp"-->
+                                    <!--                                        app:cardElevation="@dimen/_12sdp">-->
+
+                                    <TextView
+                                        android:id="@+id/tv_fundamental_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:paddingStart="@dimen/_15sdp"
+                                        android:text="@string/fundamental_work"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textStyle="bold">
+
+                                    </TextView>
+
+                                    <!--                                    </androidx.cardview.widget.CardView>-->
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    android:src="@drawable/splash_welcome_icon">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+                        </com.skydoves.elasticviews.ElasticLayout>
+
+
+                        <!--                        </androidx.cardview.widget.CardView>-->
+
+                        <!--                        <androidx.cardview.widget.CardView-->
+                        <!--                            android:id="@+id/card_Foundation"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginStart="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginEnd="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginBottom="@dimen/_10sdp"-->
+                        <!--                            android:visibility="gone"-->
+                        <!--                            app:cardBackgroundColor="@color/home_card_bg"-->
+                        <!--                            app:cardCornerRadius="@dimen/_8sdp"-->
+                        <!--                            app:cardElevation="@dimen/_12sdp">-->
+
+                        <com.skydoves.elasticviews.ElasticLayout
+                            android:id="@+id/card_Foundation"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:visibility="gone"
+                            app:layout_duration="300"
+                            app:layout_scale="0.95">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_70sdp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_70sdp"
+                                    android:background="@drawable/kidslearning_button">
+
+                                    <!--                                    <androidx.cardview.widget.CardView-->
+                                    <!--                                        android:layout_width="match_parent"-->
+                                    <!--                                        android:layout_height="match_parent"-->
+                                    <!--                                        android:layout_margin="@dimen/_7sdp"-->
+                                    <!--                                        app:cardBackgroundColor="@color/goldenrod"-->
+                                    <!--                                        app:cardCornerRadius="@dimen/_8sdp"-->
+                                    <!--                                        app:cardElevation="@dimen/_12sdp">-->
+
+                                    <TextView
+                                        android:id="@+id/tv_foundation_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:paddingStart="@dimen/_15sdp"
+                                        android:text="Kids Learning"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textStyle="bold">
+
+                                    </TextView>
+
+                                    <!--                                    </androidx.cardview.widget.CardView>-->
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:src="@drawable/fundamenta_lworkbook">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+                        </com.skydoves.elasticviews.ElasticLayout>
+
+
+                        <!--                        </androidx.cardview.widget.CardView>-->
+
+                        <!--                        <androidx.cardview.widget.CardView-->
+                        <!--                            android:id="@+id/card_crash_course"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginStart="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginEnd="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginBottom="@dimen/_10sdp"-->
+                        <!--                            android:visibility="gone"-->
+                        <!--                            app:cardBackgroundColor="@color/home_card_bg"-->
+                        <!--                            app:cardCornerRadius="@dimen/_8sdp"-->
+                        <!--                            app:cardElevation="@dimen/_12sdp">-->
+
+
+
+
+
+                        <!--                        </androidx.cardview.widget.CardView>-->
+
+                        <!--                        <androidx.cardview.widget.CardView-->
+                        <!--                            android:id="@+id/card_situation"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginStart="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_15sdp"-->
+                        <!--                            android:layout_marginEnd="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginBottom="@dimen/_10sdp"-->
+                        <!--                            app:cardBackgroundColor="@color/home_card_bg"-->
+                        <!--                            app:cardCornerRadius="@dimen/_8sdp"-->
+                        <!--                            app:cardElevation="@dimen/_12sdp">-->
+
+
+                        <com.skydoves.elasticviews.ElasticLayout
+                            android:id="@+id/card_situation"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_margin="@dimen/_10sdp"
+                            app:layout_duration="300"
+                            app:layout_scale="0.95">
+
+                            <RelativeLayout
+
+
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_70sdp"
+                                android:background="@drawable/havefun_button">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_70sdp">
+
+                                    <!--                                    <androidx.cardview.widget.CardView-->
+                                    <!--                                        android:layout_width="match_parent"-->
+                                    <!--                                        android:layout_height="match_parent"-->
+                                    <!--                                        android:layout_margin="@dimen/_7sdp"-->
+                                    <!--                                        app:cardBackgroundColor="@color/deep_pink"-->
+                                    <!--                                        app:cardCornerRadius="@dimen/_8sdp"-->
+                                    <!--                                        app:cardElevation="@dimen/_12sdp">-->
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:paddingStart="@dimen/_15sdp"
+                                        android:text="@string/situation"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textStyle="bold">
+
+                                    </TextView>
+
+                                    <!--                                    </androidx.cardview.widget.CardView>-->
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+
+                                    android:src="@drawable/situation">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+                        </com.skydoves.elasticviews.ElasticLayout>
+
+
+                        <!--                        </androidx.cardview.widget.CardView>-->
+
+                        <!--                        <androidx.cardview.widget.CardView-->
+                        <!--                            android:id="@+id/card_personality"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginStart="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_15sdp"-->
+                        <!--                            android:layout_marginEnd="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginBottom="@dimen/_10sdp"-->
+                        <!--                            app:cardBackgroundColor="@color/home_card_bg"-->
+                        <!--                            app:cardCornerRadius="@dimen/_8sdp"-->
+                        <!--                            app:cardElevation="@dimen/_12sdp">-->
+
+                        <com.skydoves.elasticviews.ElasticLayout
+                            android:id="@+id/card_havefun"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_margin="@dimen/_10sdp"
+                            app:layout_duration="300"
+                            app:layout_scale="0.95">
+
+                            <RelativeLayout
+
+
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_70sdp"
+                                android:background="@drawable/havefun_button">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_70sdp">
+
+                                    <!--                                    <androidx.cardview.widget.CardView-->
+                                    <!--                                        android:layout_width="match_parent"-->
+                                    <!--                                        android:layout_height="match_parent"-->
+                                    <!--                                        android:layout_margin="@dimen/_7sdp"-->
+                                    <!--                                        app:cardBackgroundColor="@color/deep_pink"-->
+                                    <!--                                        app:cardCornerRadius="@dimen/_8sdp"-->
+                                    <!--                                        app:cardElevation="@dimen/_12sdp">-->
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:paddingStart="@dimen/_15sdp"
+                                        android:text="@string/havefun"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textStyle="bold">
+
+                                    </TextView>
+
+                                    <!--                                    </androidx.cardview.widget.CardView>-->
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+
+                                    android:src="@drawable/situation">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                        </com.skydoves.elasticviews.ElasticLayout>
+
+
+                        <com.skydoves.elasticviews.ElasticLayout
+                            android:id="@+id/card_personality"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            app:layout_duration="300"
+                            app:layout_scale="0.95">
+
+                            <RelativeLayout
+
+
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_70sdp"
+                                android:background="@drawable/personality_development">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_70sdp">
+
+
+                                    <!--                                    <androidx.cardview.widget.CardView-->
+                                    <!--                                        android:layout_width="match_parent"-->
+                                    <!--                                        android:layout_height="match_parent"-->
+                                    <!--                                        android:layout_margin="@dimen/_7sdp"-->
+                                    <!--                                        app:cardBackgroundColor="@color/lime_green"-->
+                                    <!--                                        app:cardCornerRadius="@dimen/_8sdp"-->
+                                    <!--                                        app:cardElevation="@dimen/_12sdp">-->
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:paddingStart="@dimen/_15sdp"
+                                        android:text="@string/personality_dev_"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textStyle="bold">
+
+                                    </TextView>
+
+                                    <!--                                    </androidx.cardview.widget.CardView>-->
+
+                                </RelativeLayout>
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    android:src="@drawable/personality_developement">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                        </com.skydoves.elasticviews.ElasticLayout>
+
+                        <com.skydoves.elasticviews.ElasticLayout
+                            android:id="@+id/card_practice_offline"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            app:layout_duration="300"
+                            app:layout_scale="0.95">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_90sdp"
+                                android:background="@drawable/practice_speaking_with_snake">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_70sdp">
+
+
+                                    <!--                                    <androidx.cardview.widget.CardView-->
+                                    <!--                                        android:layout_width="match_parent"-->
+                                    <!--                                        android:layout_height="match_parent"-->
+                                    <!--                                        android:layout_margin="@dimen/_7sdp"-->
+                                    <!--                                        app:cardBackgroundColor="@color/lime_green"-->
+                                    <!--                                        app:cardCornerRadius="@dimen/_8sdp"-->
+                                    <!--                                        app:cardElevation="@dimen/_12sdp">-->
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:paddingStart="@dimen/_15sdp"
+
+                                        android:text="@string/practice_offline1"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textStyle="bold">
+
+                                    </TextView>
+
+                                    <!--                                    </androidx.cardview.widget.CardView>-->
+
+                                </RelativeLayout>
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    android:src="@drawable/practice_speaking">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                        </com.skydoves.elasticviews.ElasticLayout>
+
+
+                        <!--                        </androidx.cardview.widget.CardView>-->
+
+                        <!--                        <androidx.cardview.widget.CardView-->
+                        <!--                            android:id="@+id/card_practice_offline"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginStart="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_15sdp"-->
+                        <!--                            android:layout_marginEnd="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginBottom="@dimen/_10sdp"-->
+                        <!--                            app:cardBackgroundColor="@color/home_card_bg"-->
+                        <!--                            app:cardCornerRadius="@dimen/_8sdp"-->
+                        <!--                            app:cardElevation="@dimen/_12sdp">-->
+
+
+                        <com.skydoves.elasticviews.ElasticLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:visibility="gone"
+                            app:layout_duration="300"
+                            app:layout_scale="0.95">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/practice_speaking_with_snake">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:layout_editor_absoluteX="0dp">
+
+                                    <!--                                    <androidx.cardview.widget.CardView-->
+                                    <!--                                        android:layout_width="match_parent"-->
+                                    <!--                                        android:layout_height="match_parent"-->
+                                    <!--                                        android:layout_margin="@dimen/_7sdp"-->
+                                    <!--                                        app:cardBackgroundColor="@color/sky_blue"-->
+                                    <!--                                        app:cardCornerRadius="@dimen/_8sdp"-->
+                                    <!--                                        app:cardElevation="@dimen/_12sdp">-->
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:paddingStart="@dimen/_15sdp"
+                                        android:text="@string/practice_offline1"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textStyle="bold">
+
+                                    </TextView>
+
+                                    <!--                                    </androidx.cardview.widget.CardView>-->
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_40sdp"
+                                        android:layout_height="@dimen/_40sdp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginEnd="@dimen/_15sdp"
+                                        android:src="@drawable/practice_speaking">
+
+                                    </ImageView>
+
+                                </RelativeLayout>
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.skydoves.elasticviews.ElasticLayout>
+
+
+                        <!--                        </androidx.cardview.widget.CardView>-->
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+
+</layout>

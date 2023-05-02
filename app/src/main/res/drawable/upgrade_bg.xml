@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/super_powder_blue"/> <!--your desired colour for solid-->
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/white" /> <!--your desired colour for border-->
+
+    <corners
+        android:radius="@dimen/_20sdp"/> <!--shape rounded value-->
+    <padding android:left="@dimen/_10sdp"
+        android:right="@dimen/_10sdp"
+        android:top="@dimen/_5sdp"
+        android:bottom="@dimen/_5sdp"/>
+
+</shape>

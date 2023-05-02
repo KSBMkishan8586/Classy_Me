@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.ksbm.ontu.alerts_module.adapter.UpcomingList_Adapter" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical"
+        tools:context=".alerts_module.CalendarActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ivBack"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp">
+
+
+                <TextView
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/rect_sky_blue_border"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/calendar"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="normal">
+
+                </TextView>
+
+                <!--        <ImageView-->
+                <!--            android:layout_width="@dimen/_32sdp"-->
+                <!--            android:layout_height="@dimen/_32sdp"-->
+                <!--            android:layout_alignParentEnd="true"-->
+                <!--            android:layout_centerVertical="true"-->
+                <!--            android:layout_marginEnd="@dimen/_10sdp"-->
+                <!--            android:scaleType="fitXY"-->
+                <!--            android:src="@drawable/start_video">-->
+
+                <!--        </ImageView>-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_190sdp"
+                    android:src="@drawable/girl_image_splash" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_65sdp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_month_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="2021, oct"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_22sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <sun.bob.mcalendarview.views.ExpCalendarView
+                            android:id="@+id/calendar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:context=".CalendarActivity" />
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/home_card_bg"
+                        android:layout_gravity="center_horizontal"
+                        app:cardCornerRadius="@dimen/_20sdp"
+                        app:cardMaxElevation="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_5sdp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/_6sdp"
+                            android:text="Upcoming Event"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="normal">
+
+                        </TextView>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclelist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adapter="@{adapter}"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:scrollbars="none"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back_button">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+</layout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.ksbm.ontu.foundation.model.CurrencyModel.CurrencyModelResponse" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_country_img"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_flag_24" />
+
+            <TextView
+                android:layout_weight="0.5"
+                android:id="@+id/tv_title"
+                style="@style/text_14_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:text="@{model.countryName}"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_weight="0.5"
+                android:id="@+id/tv_desc"
+                style="@style/text_14_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:text="@{model.currencyName}"
+                android:layout_gravity="center_vertical"
+                android:gravity="end"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

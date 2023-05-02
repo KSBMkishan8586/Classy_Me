@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="personalityAdapter"
+            type="com.ksbm.ontu.situation.adapter.SituationJumbleWord_Adapter" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scrollbars="none">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_heading_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_below="@+id/tv_heading_name"
+                    android:id="@+id/linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_quiz_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/iv_cartoon"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="normal"
+                        app:drawableStartCompat="@drawable/speaker_icon1" />
+
+                    <ImageView
+                        android:id="@+id/iv_cartoon"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/girl_image_splash" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/linear_layout"
+                    android:layout_above="@+id/ll_check_ans"
+                    android:id="@+id/linear_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/card_bg_gold"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/resultView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:hint=""
+                            android:padding="@dimen/_5sdp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:id="@+id/iv_i_quiz"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:src="@drawable/i_button"
+                            android:visibility="gone"></ImageView>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/goldenrod"></View>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclelist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:adapter="@{personalityAdapter}"
+                        android:orientation="vertical"
+                        android:scrollbars="none"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:spanCount="3">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_check_ans"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_check_ans"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/rectangle_bg_grey"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Check Answer"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/ll_get_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/iv_userside_coin_img"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_gravity="center"
+                            android:rotation="70"
+                            android:scaleType="fitXY"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/move_coins_right" />
+
+                        <TextView
+                            android:id="@+id/tv_user_coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:padding="@dimen/_5sdp"
+                            android:text="+ 100"
+                            android:textAlignment="center"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_24sdp"
+                            android:textStyle="bold"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+<!--        </ScrollView>-->
+
+
+    </RelativeLayout>
+
+</layout>

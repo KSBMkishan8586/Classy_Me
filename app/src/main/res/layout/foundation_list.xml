@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="model"
+            type="com.ksbm.ontu.foundation.model.FoundationTypeModel" />
+
+    </data>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.skydoves.elasticviews.ElasticLayout
+        android:id="@+id/rel_foundation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_duration="300"
+        app:layout_scale="0.95">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:background="@drawable/btn_main_round"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_marginRight="3dp"
+                android:visibility="visible"
+                android:layout_marginLeft="3dp"
+                android:layout_height="66dp">
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/basic_button"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/black"
+                android:shadowRadius="5">
+
+                <!--                <androidx.cardview.widget.CardView-->
+                <!--                    android:id="@+id/card_bg"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="@dimen/_60sdp"-->
+                <!--                    android:layout_margin="@dimen/_5sdp"-->
+                <!--                    app:cardCornerRadius="@dimen/_8sdp"-->
+                <!--                    app:cardBackgroundColor="@color/sky_blue"-->
+                <!--                    app:cardElevation="@dimen/_8sdp">-->
+
+                <TextView
+                    android:id="@+id/tv_foundation_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/candara"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:text="@{model.title}"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <!--                </androidx.cardview.widget.CardView>-->
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/basics_foundation">
+
+            </ImageView>
+
+        </RelativeLayout>
+    </com.skydoves.elasticviews.ElasticLayout>
+
+
+
+</LinearLayout>
+</layout>

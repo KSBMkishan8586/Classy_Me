@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whitebackground">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_arrow"
+            android:tint="@color/black"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Body Part"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="210dp"
+                android:layout_height="450dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/full_body" />
+
+            <TextView
+                android:id="@+id/tv_Ho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/bg_line_border"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_line_border"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text=""
+
+                android:textColor="@color/medium_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="210dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Chest"
+                android:visibility="invisible"
+                android:textColor="@color/maroon"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="390dp"
+
+                android:background="@drawable/bg_line_border"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text=""
+
+                android:textColor="@color/red_btn_bg_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_Hj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="470dp"
+                android:background="@drawable/bg_line_border"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text=""
+
+                android:textColor="@color/yellow"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_He"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="140dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Tongue"
+                android:visibility="invisible"
+                android:textColor="@color/red_btn_bg_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Ha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/bg_line_border"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text=""
+
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="20dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Lip"
+                android:visibility="invisible"
+                android:textColor="@color/violet"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="60dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Teeth"
+                android:visibility="invisible"
+                android:textColor="@color/red_btn_bg_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="95dp"
+                android:background="@drawable/bg_line_border"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text=""
+
+                android:textColor="@color/violet"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="130dp"
+                android:background="@drawable/bg_line_border"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text=""
+                android:textColor="@color/yellow"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="170dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Shoulder"
+                android:visibility="invisible"
+                android:textColor="@color/medium_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="230dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="Arm"
+                android:visibility="invisible"
+                android:textColor="@color/maroon"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="330dp"
+
+                android:background="@drawable/bg_line_border"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text=""
+
+                android:textColor="@color/red_btn_bg_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_Hh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="320dp"
+                android:background="@drawable/bg_line_border"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text=""
+
+                android:textColor="@color/yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_Hf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="170dp"
+                android:background="@drawable/bg_line_border"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:shadowColor="@color/red"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text=""
+
+                android:textColor="@color/violet"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <!--            <View-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0.1dp"-->
+            <!--                android:background="@color/black"/>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/hair"-->
+            <!--                android:layout_width="100sp"-->
+            <!--                android:layout_height="40sp"-->
+            <!--                -->
+            <!--                android:text="Hair"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginBottom="85dp"-->
+            <!--                android:layout_alignParentLeft="true"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textSize="16sp"/>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/ear"-->
+            <!--                android:layout_width="100sp"-->
+            <!--                android:layout_height="40sp"-->
+            <!--                android:text="Ear"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginBottom="85dp"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textSize="16sp"/>-->
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/eye"-->
+            <!--                android:layout_width="100sp"-->
+            <!--                android:layout_height="40sp"-->
+            <!--                -->
+            <!--                android:text="Eye"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginBottom="1dp"-->
+            <!--                android:layout_toLeftOf="@+id/thigh"-->
+            <!--                android:textSize="16sp"/>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/thigh"-->
+            <!--                android:layout_width="100sp"-->
+            <!--                android:layout_height="40sp"-->
+            <!--                -->
+            <!--                android:text="Thigh"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginBottom="1dp"-->
+            <!--                android:layout_toLeftOf="@+id/foot"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textSize="16sp"/>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/foot"-->
+            <!--                android:layout_width="100sp"-->
+            <!--                android:layout_height="40sp"-->
+            <!--                -->
+            <!--                android:text="Foot"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginBottom="1dp"-->
+            <!--                android:layout_toLeftOf="@+id/keen"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textSize="16sp"/>-->
+
+
+            <!--            <View-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0.1dp"-->
+            <!--                android:background="@color/black"/>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/keen"-->
+            <!--                android:layout_width="100sp"-->
+            <!--                android:layout_height="40sp"-->
+            <!--                android:text="Knee"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginBottom="1dp"-->
+            <!--                android:layout_toRightOf="@+id/neck"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textSize="16sp"/>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/fingure"-->
+            <!--                android:layout_width="100sp"-->
+            <!--                android:layout_height="40sp"-->
+            <!--                android:text="Fingure"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginBottom="40dp"-->
+            <!--                android:layout_toRightOf="@+id/neck"-->
+            <!--                android:textSize="16sp"/>-->
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/neck"-->
+            <!--                android:layout_width="100sp"-->
+            <!--                android:layout_height="40sp"-->
+            <!--                android:text="Neck"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginBottom="40dp"-->
+            <!--                android:layout_toRightOf="@+id/month"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textSize="16sp"/>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/month"-->
+            <!--                android:layout_width="100sp"-->
+            <!--                android:layout_height="40sp"-->
+            <!--                android:text="Mouth"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginBottom="40dp"-->
+            <!--                android:layout_toRightOf="@+id/nose"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textSize="16sp"/>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/nose"-->
+            <!--                android:layout_width="100sp"-->
+            <!--                android:layout_height="40sp"-->
+            <!--                android:layout_alignParentBottom="true"-->
+            <!--                android:layout_marginBottom="40dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:text="Nose"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textSize="16sp"-->
+            <!--                android:textStyle="bold" />-->
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/bodypart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:shadowColor="@color/yellow"
+            android:shadowRadius="20"
+            android:text="Drag and Drop"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

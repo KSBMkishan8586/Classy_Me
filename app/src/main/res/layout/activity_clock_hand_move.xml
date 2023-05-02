@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <include
+                        android:id="@+id/header"
+                        layout="@layout/alert_and_freecoin_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rel_toolbar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Let's rotate the hour hand to learn "
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_header_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_header"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="O'clock"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_24sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <com.ksbm.ontu.foundation.time.AnalogClock1
+                        android:id="@+id/analogClock"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_250sdp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_listen"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_bg_foundation"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Listen"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/layout_button"
+                    layout="@layout/next_previous_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_back" />
+
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/back_button">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

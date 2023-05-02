@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_alphabet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/alphabatestv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_alphabet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="0.5"
+                android:gravity="bottom"
+                android:textAllCaps="true"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_120sdp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tv_alphabet_name_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="0.5"
+
+                android:gravity="bottom"
+                android:textAllCaps="false"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_90sdp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_220sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="0.6">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtlearn"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fillViewport="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_dynamic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/txtlearn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_alphabet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fillViewport="true"
+        android:fontFamily="@font/futura_font_family"
+        android:gravity="center"
+
+        android:textColor="@color/red"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+
+    <include
+        android:id="@+id/ll_button"
+        layout="@layout/record_listen_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_310sdp"></include>
+
+    <LinearLayout
+        android:layout_below="@+id/ll_button"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll_get_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_userside_coin_img"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:rotation="70"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            app:srcCompat="@drawable/move_coins_right" />
+
+        <TextView
+            android:id="@+id/tv_user_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/_5sdp"
+            android:text="+ 100"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

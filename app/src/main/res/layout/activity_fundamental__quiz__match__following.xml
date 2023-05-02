@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="personalityAdapter"
+            type="com.ksbm.ontu.fundamental.adapter.Fundamental_Touch_Fill_Word_Adapter" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/back_arrow"
+                app:tint="@color/black">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_i_button"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/i_button">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Noun"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/rel_toolbar"
+            layout="@layout/user_ontu_coin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tv_workbookname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_toolbar"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Workbook 1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_workbookname"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/card_bg_gold"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/tv_quiz_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="Noun"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="normal">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_below="@+id/linear_layout"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/card_bg_gold"
+            android:orientation="vertical"
+            >
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                >-->
+
+            <!--                <ListView-->
+            <!--                    android:id="@+id/text_list"-->
+            <!--                    android:layout_width="@dimen/_120sdp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_alignParentStart="true"-->
+            <!--                    android:layout_marginStart="@dimen/_5sdp" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:id="@+id/draw_line"-->
+            <!--                    android:layout_width="@dimen/_1sdp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_centerInParent="true"-->
+            <!--                    android:background="@color/blue"-->
+            <!--                    android:orientation="vertical" />-->
+
+            <!--                <ListView-->
+            <!--                    android:id="@+id/text_list1"-->
+            <!--                    android:layout_width="@dimen/_120sdp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_alignParentEnd="true"-->
+            <!--                    />-->
+
+
+            <!--            </RelativeLayout>-->
+
+
+            <com.ksbm.ontu.foundation.ArrowLayout
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/arrow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/text_row1"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_fill"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="dddd"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/text_row2"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_fill"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="rrrr"
+                    android:layout_below="@+id/text_row1"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/text_row3"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_fill"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/text_row2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/text_row4"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_fill"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/text_row3"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/text_row5"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_fill"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/text_row4"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/text_row_right1"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_blue_bg2"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/text_row_right2"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_blue_bg2"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/text_row_right1"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/text_row_right3"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_blue_bg2"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/text_row_right2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/text_row_right4"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_blue_bg2"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/text_row_right3"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/text_row_right5"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_blue_bg2"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/text_row_right4"
+                    android:textStyle="normal" />
+
+            </com.ksbm.ontu.foundation.ArrowLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_previous"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/next_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="Previous"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="normal">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="@drawable/next_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="Next"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="normal">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/fullScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <include
+                        android:id="@+id/header"
+                        layout="@layout/alert_and_freecoin_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_below="@+id/rel_toolbar"
+                    android:id="@+id/tv_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Question?"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+
+                    <ImageView
+                        android:id="@+id/iv_i_button"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/i_button"
+                        android:visibility="gone"
+                        >
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/ivStar"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/swipe_ball" />
+
+                    <ImageView
+                        android:id="@+id/iv_arraow_up"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_above="@+id/ivStar"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:rotation="270"
+                        android:src="@drawable/direction_arrow"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_arraow_down"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_below="@+id/ivStar"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:rotation="90"
+                        android:src="@drawable/direction_arrow"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_arraow_right"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivStar"
+                        android:gravity="center"
+                        android:rotation="0"
+                        android:src="@drawable/direction_arrow"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_arraow_left"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/ivStar"
+                        android:gravity="center"
+                        android:rotation="180"
+                        android:src="@drawable/direction_arrow"
+                        android:visibility="invisible" />
+
+                    <RelativeLayout
+                        android:id="@+id/resultViewWest"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/resultWest"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/resultViewEast"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/resultEast"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/resultViewNorth"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/iv_arraow_up"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/resultNorth"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/resultViewSouth"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_below="@+id/iv_arraow_down"
+                       >
+
+                        <ImageView
+                            android:id="@+id/resultSouth"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:padding="@dimen/_5sdp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/layout_button"
+                    layout="@layout/next_previous_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_back" />
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/back_button">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

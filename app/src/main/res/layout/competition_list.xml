@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.ksbm.ontu.profile.model.CompetitionListModel.CompetitionListData" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/ll_details"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@drawable/personality_card_bg"
+            android:orientation="horizontal">
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/iv_userimage"-->
+<!--                android:layout_width="@dimen/_80sdp"-->
+<!--                android:layout_height="@dimen/_60sdp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginStart="@dimen/_15sdp"-->
+<!--                android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                android:src="@drawable/man" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_fullname"
+                        style="@style/text_14_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@{model.competitionTitle}"
+                        android:padding="@dimen/_2sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_start_date"
+                        style="@style/textview12white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/_2sdp"
+                        />
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    style="@style/textview12white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/_2sdp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

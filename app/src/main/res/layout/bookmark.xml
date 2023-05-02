@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+
+
+
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        android:elevation="5dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scaleType="fitXY"/>-->
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/flagbook"-->
+<!--            android:scaleType="fitXY"/>-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:tint="@color/white"-->
+<!--            android:layout_gravity="right|bottom"-->
+<!--            app:civ_border_width="2dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            app:civ_border_color="@color/red"-->
+<!--            android:src="@color/white"/>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/noselect"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_gravity="right|bottom"-->
+<!--            android:layout_margin="10dp"/>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/delete"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_gravity="right|bottom"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:visibility="gone"-->
+<!--            android:tint="@color/red"-->
+<!--            android:src="@drawable/right_check"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/rectangle_bg_green"
+        android:layout_marginTop="7dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:tint="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:civ_border_width="2dp"
+            android:layout_margin="10dp"
+            app:civ_border_color="@color/red"
+            android:src="@color/white"/>
+
+        <ImageView
+            android:id="@+id/noselect"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:tint="@color/red"
+            android:src="@drawable/right_check"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:src="@drawable/flagbook"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"/>
+
+
+</RelativeLayout>

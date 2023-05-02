@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="personalityAdapter"
+            type="com.ksbm.ontu.personality_dev.adapter.Video_List_Adapter" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_bg"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        >
+
+                        <!--                        <ImageView-->
+                        <!--                            android:layout_width="@dimen/_32sdp"-->
+                        <!--                            android:layout_height="@dimen/_32sdp"-->
+                        <!--                            android:layout_alignParentStart="true"-->
+                        <!--                            android:layout_centerVertical="true"-->
+                        <!--                            android:layout_marginEnd="@dimen/_10sdp"-->
+                        <!--                            android:scaleType="fitXY"-->
+                        <!--                            android:src="@drawable/menu_icon">-->
+
+                        <!--                        </ImageView>-->
+
+                        <TextView
+                            android:id="@+id/tv_header_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:text="@string/personality_dev"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_16sdp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="@dimen/_32sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/start_video">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/rel_mid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_toolbar"
+                        android:orientation="vertical">
+
+                        <SearchView
+                            android:id="@+id/searchView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:queryHint="Search..."
+                            android:iconifiedByDefault="false"
+                            android:layout_gravity="center"
+                            app:theme="@style/AppSearchView"
+                            android:background="@drawable/rect_sky_blue_edit"
+                            />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclelist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adapter="@{personalityAdapter}"
+                            android:orientation="vertical"
+                            android:scrollbars="none"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/coin_gif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:src="@drawable/gif_coin" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/back_button">
+        </ImageView>
+
+    </RelativeLayout>
+</layout>

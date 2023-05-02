@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.ksbm.ontu.foundation.model.PalletColorModel" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll_color_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_75sdp"
+        android:background="@drawable/line_border_blue"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_color_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:elevation="@dimen/_20sdp"
+            android:gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:text="@{model.color_name}"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold">
+        </TextView>
+
+
+    </LinearLayout>
+</layout>

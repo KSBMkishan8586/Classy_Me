@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:id="@+id/fullScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_15sdp"
+                android:src="@drawable/back_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.885"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/currency_convert"
+                android:textColor="@color/main_blue"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.598"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/ic_coin"
+                android:layout_width="@dimen/_46sdp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/start_video"
+                android:foregroundGravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.633" />
+
+            <TextView
+                android:id="@+id/txtFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/from"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.106"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.031" />
+
+            <RelativeLayout
+                android:id="@+id/rel_spin1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text_input_with_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtFrom"
+                app:layout_constraintVertical_bias="0.0">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spnFirstCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/to"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.106"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rel_spin1"
+                app:layout_constraintVertical_bias="0.031" />
+
+            <RelativeLayout
+                android:id="@+id/rel_spin2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text_input_with_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTo"
+                app:layout_constraintVertical_bias="0.0">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spnSecondCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtFirstCurrencyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.896"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rel_spin2"
+                app:layout_constraintVertical_bias="0.073" />
+
+            <EditText
+                android:id="@+id/etFirstCurrency"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text_input_with_border"
+                android:ellipsize="start"
+                android:hint="@string/amount"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtFirstCurrencyName"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="LabelFor" />
+
+            <Button
+                android:id="@+id/btnConvert"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_main_round"
+                android:text="@string/convert"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etFirstCurrency"
+                app:layout_constraintVertical_bias="0.123" />
+
+            <ProgressBar
+                android:id="@+id/prgLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnConvert"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RelativeLayout
+                android:id="@+id/lytResult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.896"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnConvert"
+                app:layout_constraintVertical_bias="0.23">
+
+                <TextView
+                    android:id="@+id/txtResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/result"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtSecondCurrencyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/etSecondCurrency"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_text_input_with_border_2"
+                android:enabled="false"
+                android:hint="@string/converted_amount"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lytResult"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="LabelFor" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_back"-->
+<!--        android:layout_width="@dimen/_36sdp"-->
+<!--        android:layout_height="@dimen/_36sdp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="@dimen/_15sdp"-->
+<!--        android:layout_marginBottom="@dimen/_15sdp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/back_button"></ImageView>-->
+
+</RelativeLayout>
+
+    </layout>

@@ -1,0 +1,2 @@
+include ':app', ':googlecloudtts'
+rootProject.name = "Classy Me"

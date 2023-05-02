@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.ksbm.ontu.practice_offline.adapter.Offline_Stage_Adapter" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_bg"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/rel_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/header_bg">
+
+                        <RelativeLayout
+                            android:id="@+id/rel_memory_map"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5sdp">
+
+                            <TextView
+                                android:id="@+id/tv_memory_map"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:background="@drawable/rect_golden"
+                                android:text="@string/memory_map"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_memory_map">
+
+                                <ProgressBar
+                                    android:id="@+id/offline_score_Bar"
+                                    style="@style/MyProgressBar"
+                                    android:layout_width="@dimen/_75sdp"
+                                    android:layout_height="@dimen/_12sdp"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:progress="0" />
+
+                                <TextView
+                                    android:id="@+id/tv_memory_percent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="0%"
+                                    android:textColor="@color/white"></TextView>
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="@+id/rel_memory_map"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:text="@string/practice_offline"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_18sdp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:id="@+id/ll_offline_sync"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@drawable/bg_line_border"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:visibility="visible"
+                                app:srcCompat="@drawable/rupee_money_icon" />
+
+                            <TextView
+
+                                style="@style/text_12_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="@dimen/_3sdp"
+                                android:gravity="center_vertical"
+                                android:text="Sync coin"
+                                android:textSize="@dimen/_10sdp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_stage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_toolbar"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:fontFamily="@font/candara"
+                        android:gravity="center"
+                        android:text="@string/select_stage"
+                        android:textAlignment="center"
+                        android:textColor="@color/chat_box_left"
+                        android:textSize="@dimen/_24sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/rel_mid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_stage"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclelist"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:adapter="@{adapter}"
+                            android:orientation="vertical"
+                            android:scrollbars="none"
+                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                            app:spanCount="2">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back_button">
+
+        </ImageView>
+    </RelativeLayout>
+</layout>

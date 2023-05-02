@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+
+            <!--corners allow us to make the rounded corners button-->
+            <corners android:radius="@dimen/_16sdp" />
+
+            <!--            <padding android:bottom="@dimen/_5sdp" />-->
+            <!--            <padding android:top="@dimen/_5sdp" />-->
+            <!--            <padding android:left="@dimen/_5sdp" />-->
+            <padding android:top="3dp"
+                android:right="10dp"
+                android:left="10dp"
+                android:bottom="3dp"/>
+
+            <solid android:color="@color/_light_green" />
+
+        </shape>
+
+    </item>
+</selector>

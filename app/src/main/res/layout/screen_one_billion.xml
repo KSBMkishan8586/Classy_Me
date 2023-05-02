@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <!--                    <ImageView-->
+                    <!--                        android:id="@+id/iv_menu"-->
+                    <!--                        android:layout_width="@dimen/_32sdp"-->
+                    <!--                        android:layout_height="@dimen/_32sdp"-->
+                    <!--                        android:layout_alignParentStart="true"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+                    <!--                        android:scaleType="fitXY"-->
+                    <!--                        android:src="@drawable/menu_icon">-->
+
+                    <!--                    </ImageView>-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/tv_title"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_alignParentStart="true"-->
+                    <!--                        android:layout_centerHorizontal="true"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:layout_gravity="center_vertical"-->
+                    <!--                        android:gravity="center"-->
+                    <!--                        android:text="@string/foundation_work"-->
+                    <!--                        android:textAlignment="center"-->
+                    <!--                        android:textAllCaps="true"-->
+                    <!--                        android:textColor="@color/black"-->
+                    <!--                        android:textSize="@dimen/_14sdp"-->
+                    <!--                        android:textStyle="bold">-->
+
+                    <!--                    </TextView>-->
+
+                    <!--                    <ImageView-->
+                    <!--                        android:id="@+id/iv_coin"-->
+                    <!--                        android:layout_width="@dimen/_32sdp"-->
+                    <!--                        android:layout_height="@dimen/_32sdp"-->
+                    <!--                        android:layout_alignParentEnd="true"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+                    <!--                        android:scaleType="fitXY"-->
+                    <!--                        android:src="@drawable/start_video">-->
+
+                    <!--                    </ImageView>-->
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rel_toolbar"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/rect_sky_blue_bg"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="1000000000"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_32sdp"
+                            android:textStyle="bold"></TextView>
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_gravity="center_vertical"-->
+                        <!--                            android:layout_centerVertical="true"-->
+                        <!--                            android:layout_toEndOf="@+id/tv_100"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:paddingStart="@dimen/_5sdp"-->
+                        <!--                            android:text="TEN"-->
+                        <!--                            android:textAlignment="center"-->
+                        <!--                            android:textAllCaps="true"-->
+                        <!--                            android:textColor="@color/red"-->
+                        <!--                            android:textSize="@dimen/_32sdp"-->
+                        <!--                            android:textStyle="bold"></TextView>-->
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/hun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="Hundred \nCrores"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_32sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_girl"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdp">
+
+                        </ImageView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@drawable/rect_sky_blue_bg"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:padding="@dimen/_5sdp"
+                                android:text="1 Billion"
+                                android:textAlignment="center"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_32sdp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/iv_i_button"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:src="@drawable/i_button">
+
+                            </ImageView>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/ll_button"
+                    layout="@layout/record_listen_button_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_310sdp"></include>
+
+                <LinearLayout
+                    android:id="@+id/ll_get_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/iv_userside_coin_img"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        android:rotation="70"
+                        android:scaleType="fitXY"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/move_coins_right" />
+
+                    <TextView
+                        android:id="@+id/tv_user_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="@dimen/_5sdp"
+                        android:text="+ 100"
+                        android:textAlignment="center"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_24sdp"
+                        android:textStyle="bold"></TextView>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

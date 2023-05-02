@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="model"
+            type="com.ksbm.ontu.fundamental.model.quiz_touch_fill.Touch_FillWord"/>
+
+    </data>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_margin="@dimen/_5sdp"-->
+<!--            >-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_12sdp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_3sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            >
+
+            <TextView
+                android:id="@+id/card_item"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_fill"
+                android:gravity="center"
+                android:text="@{model.rightAnswer}"
+                android:textAlignment="center"
+                android:textColor="@color/color_blue1"
+                android:textSize="@dimen/_14sdp"
+                android:layout_gravity="center"
+                android:textStyle="normal" />
+
+        </androidx.cardview.widget.CardView>
+
+<!--        </RelativeLayout>-->
+
+    </LinearLayout>
+</layout>

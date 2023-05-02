@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/home"
+        android:id="@+id/home"
+        android:icon="@drawable/home_button"
+       />
+    <item
+        android:title="@string/settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/setting"
+        tools:ignore="HardcodedText" />
+    <item
+        android:title="@string/translate"
+        android:id="@+id/translate"
+        android:icon="@drawable/translate"
+       />
+
+    <item
+        android:title="@string/shop"
+        android:id="@+id/shop"
+        android:icon="@drawable/shop"
+        />
+</menu>

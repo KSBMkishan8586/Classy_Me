@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="Second Hand"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Touch &amp; Learn"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_10sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/clock_image">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@color/white" />
+
+
+                <View
+                    android:id="@+id/hour_tick"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="72dp"
+                    android:layout_marginBottom="130dp"
+                    android:background="@color/black" />
+
+                <View
+                    android:id="@+id/minute_tick"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginRight="55dp"
+                    android:background="@color/black" />
+
+
+                <View
+                    android:id="@+id/second_tick"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginBottom="55dp"
+                    android:background="@color/orange_red" />
+
+
+                <View
+                    android:id="@+id/secondhandV"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="72dp"
+                    android:layout_marginBottom="130dp"
+                    android:background="#ffffff"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/longesthandV"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginRight="55dp"
+                    android:background="#ffffff"
+                    android:visibility="gone" />
+
+
+                <View
+                    android:id="@+id/fastesthandV"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginBottom="55dp"
+                    android:background="#ffffff"
+                    android:visibility="gone" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@color/red" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/secondhand"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/button_red_time"
+                        android:gravity="center"
+                        android:text="Second Hand"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:id="@+id/longesthand"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/button_red_time"
+                        android:gravity="center"
+                        android:text="Longest Hand"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/secondhands"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="Second Hand"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:id="@+id/longesthands"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="Longest Hand"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/fastesthand"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_red_time"
+                    android:layout_centerInParent="true"
+                    android:text="Fastest Hand"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+                <TextView
+                    android:id="@+id/fastesthandf"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Fastest Hand"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1 Movement is 1 Second "
+                    android:textColor="@color/indigo"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/ll_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1 Movement is 1 Second "
+                    android:textColor="@color/transparent"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/tv_text5"-->
+                <!--            android:layout_weight="0.5"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_gravity="center"-->
+                <!--            android:gravity="center"-->
+                <!--            android:text="1 Second"-->
+                <!--            android:textColor="@color/green"-->
+                <!--            android:textStyle="bold"-->
+                <!--            android:textSize="@dimen/_16sdp" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1 Clock Rotation is 60 Seconds "
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/ll_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1 Clock Rotation is 60 Seconds "
+                    android:textColor="@color/transparent"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/tv_text7"-->
+                <!--            android:layout_weight="0.5"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_gravity="center"-->
+                <!--            android:gravity="center"-->
+                <!--            android:text="1 Minute"-->
+                <!--            android:textStyle="bold"-->
+                <!--            android:textColor="@color/indigo"-->
+                <!--            android:textSize="@dimen/_16sdp" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1 Clock Rotation is also 1 minute "
+                    android:textColor="@color/brown"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ll_text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1 Clock Rotation is also 1 minute "
+                    android:textColor="@color/transparent"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/tv_text7"-->
+                <!--            android:layout_weight="0.5"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_gravity="center"-->
+                <!--            android:gravity="center"-->
+                <!--            android:text="1 Minute"-->
+                <!--            android:textStyle="bold"-->
+                <!--            android:textColor="@color/indigo"-->
+                <!--            android:textSize="@dimen/_16sdp" />-->
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

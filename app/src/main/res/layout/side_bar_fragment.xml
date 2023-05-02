@@ -1,0 +1,233 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <FrameLayout
+        android:id="@+id/sidebar_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:focusable="true">
+
+<!--        <androidx.percentlayout.widget.PercentRelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sky_blue">
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_search"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_80sdp"-->
+<!--                    android:background="@color/sky_blue"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="@dimen/_10sdp"-->
+<!--                        android:background="@drawable/rect_edit_bg"-->
+<!--                        android:drawableStart="@drawable/ic_baseline_search_24"-->
+<!--                        android:drawablePadding="@dimen/_5sdp"-->
+<!--                        android:hint="@string/search"-->
+<!--                        android:padding="@dimen/_5sdp">-->
+
+<!--                    </TextView>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_1sdp"-->
+<!--                    android:layout_below="@id/ll_search"-->
+<!--                    android:background="@color/light_black1"></View>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/bookmarks_notes"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/bookmark_notes"
+                            android:textSize="@dimen/_12sdp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_sync_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/sync_coins"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/sync_coin"
+                            android:textSize="@dimen/_12sdp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/upgrade_course"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/upgrade_course"
+                            android:textSize="@dimen/_12sdp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/memory_map"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/memory_map"
+                            android:textSize="@dimen/_12sdp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/my_public_profile"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/my_public_profile"
+                            android:textSize="@dimen/_12sdp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_invite_frnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/invite_friend"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/invite_friend"
+                            android:textSize="@dimen/_12sdp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_rate_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/rate_app"
+                            android:textSize="@dimen/_16sdp"
+                            android:textStyle="bold">
+                        </TextView>
+
+<!--                        <androidx.appcompat.widget.AppCompatRatingBar-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:foregroundGravity="center_vertical">-->
+<!--                        </androidx.appcompat.widget.AppCompatRatingBar>-->
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+<!--        </androidx.percentlayout.widget.PercentRelativeLayout>-->
+
+    </FrameLayout>
+</layout>

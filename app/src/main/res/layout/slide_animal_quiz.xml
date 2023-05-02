@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_margin="@dimen/_5sdp"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_28sdp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:fillViewport="true"
+        android:layout_gravity="center"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_dynamic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <include
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/ll_button"
+        layout="@layout/record_listen_button_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </include>
+
+    <LinearLayout
+        android:id="@+id/ll_get_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_userside_coin_img"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:rotation="70"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            app:srcCompat="@drawable/move_coins_right" />
+
+        <TextView
+            android:id="@+id/tv_user_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/_5sdp"
+            android:text="+ 100"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

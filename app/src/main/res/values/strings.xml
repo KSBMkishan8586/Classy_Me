@@ -1,0 +1,255 @@
+<resources>
+    <string name="app_name">ClassyMe</string>
+    <string name="app_name_Character">Classy \nMentor</string>
+
+
+    <string name="generic_text" translatable="false">₹ %s</string>
+    <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="touchlearn"><u>Touch &amp; Learn</u></string>
+    <string name="gmail">Email</string>
+    <string name="phone">Phone</string>
+    <string name="choose_pw">Choose password</string>
+    <string name="signout">Sign Out</string>
+    <string name="update">Update</string>
+    <string name="username">Username</string>
+    <string name="save">Save</string>
+    <string name="send">Send</string>
+    <string name="submit">Submit</string>
+    <string name="network_failure">Network Failure</string>
+    <string name="home">Home</string>
+    <string name="book_now">Book now</string>
+    <string name="search"> Search</string>
+    <string name="sch_name">School Name</string>
+    <string name="state">State</string>
+    <string name="dob">DOB</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="next">Next</string>
+    <string name="login_fb">Login With Facebook</string>
+    <string name="login_google">Login With Google</string>
+    <string name="alerts">Alerts</string>
+    <string name="fundamental_work">Fundamentals &amp; \nWorksheet</string>
+    <string name="fundamental_work_" translatable="false">Fundamentals &amp; Worksheet</string>
+    <string name="situation_ukg">Situation</string>
+    <string name="personality_dev">Personality Development</string>
+
+    <string name="practice_offline">Practice Speaking</string>
+
+    <string name="noun">Nouns</string>
+    <string name="manners">Manners</string>
+    <string name="greetings">Greetings</string>
+    <string name="daily_routine">Daily Routine</string>
+
+
+    <string name="select_language">Select Language</string>
+    <string name="forgot_pw">Forgot your password?</string>
+    <string name="password">Password</string>
+    <string name="id">User id</string>
+    <string name="forget_pw">Forgot Password</string>
+    <string name="how_to_test">How to test</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="translate">Translate</string>
+    <string name="shop">Shop</string>
+    <string name="permissions">Permissions</string>
+    <string name="eye_sight">Eye Sight:</string>
+    <string name="allow_notification">Allow Notification:</string>
+    <string name="allow_location">Allow Location:</string>
+    <string name="why_learn_english">Why you want to learn English:</string>
+    <string name="enter_details_below">Enter Your Details Below</string>
+    <string name="full_name">Full Name</string>
+    <string name="select_gender">Select Gender:</string>
+    <string name="select_profession">Select Profession:</string>
+    <string name="signup_agree_terms">By signing up, you agree to Sense’s Terms and Conditions.</string>
+    <string name="look_appearence">Look \nAppearance</string>
+    <string name="technology_problem">Technologies\nProblems</string>
+    <string name="asking_help">Asking for\nhelp</string>
+    <string name="privacy">Privacy</string>
+    <string name="situation">Situation</string>
+    <string name="or">Or</string>
+    <string name="profile" translatable="false">Profile</string>
+    <string name="subtitle" translatable="false">Subtitle</string>
+    <string name="chat_message" translatable="false">Chat Message</string>
+    <string name="show_online_status" translatable="false">Show Online Status to Friend</string>
+    <string name="get_challenges" translatable="false">Get Challanges</string>
+
+    <string name="change" translatable="false">Change</string>
+    <string name="from_friend_only" translatable="false">from friend only</string>
+    <string name="from_every_one" translatable="false">from everyone</string>
+
+
+    <string name="ranks" translatable="false">Ranks: </string>
+    <string name="info" translatable="false">Info</string>
+    <string name="best_hit" translatable="false">Best Hit:</string>
+    <string name="today_hit" translatable="false">Today Hit:</string>
+    <string name="english_score" translatable="false">English Score:</string>
+    <string name="leaderboard" translatable="false">Leaderboard</string>
+    <string name="certificate" translatable="false">Certificates</string>
+    <string name="av_total_hrs_spent" translatable="false">Av Total Hours Spent - </string>
+    <string name="today_time_spent" translatable="false">Today\'s Time Spent -</string>
+    <string name="learn" translatable="false">Learn</string>
+    <string name="activity" translatable="false">Activity</string>
+    <string name="foundation_work" translatable="false">Foundation Work</string>
+    <string name="sch_ranks" translatable="false">School Rank:</string>
+    <string name="national_ranks" translatable="false">National Rank:</string>
+    <string name="name_of_school" translatable="false">Name of the School:</string>
+    <string name="memory_map" translatable="false">Memory Map</string>
+
+
+
+    <string name="school" translatable="false">School</string>
+    <string name="country" translatable="false">Country</string>
+    <string name="prize" translatable="false">Prize:</string>
+    <string name="free_coin" translatable="false">Free Coins</string>
+    <string name="collect" translatable="false">Collect</string>
+    <string name="progression_report" translatable="false">Progression Report</string>
+    <string name="english_profiency_score" translatable="false">English Proficiency Score</string>
+    <string name="internal_exam" translatable="false">Internal Exam</string>
+    <string name="workbook" translatable="false">Worksheet</string>
+    <string name="particular" translatable="false">Particular</string>
+    <string name="score" translatable="false">Score %</string>
+    <string name="weightage" translatable="false">Weightage</string>
+    <string name="marks_obtained" translatable="false">Marks Obtained</string>
+    <string name="score_calculator" translatable="false">Score Calculator</string>
+    <string name="time_devotion" translatable="false">Time Devotion</string>
+    <string name="total" translatable="false">Total</string>
+    <string name="notification_alert" translatable="false">Notification Alert</string>
+    <string name="notice_board" translatable="false">Notice Board</string>
+    <string name="calendar" translatable="false">Calendar</string>
+    <string name="updates" translatable="false">Updates</string>
+    <string name="CoCurricular_Activity" translatable="false">Co-Curricular Activity</string>
+    <string name="reward" translatable="false">Reward</string>
+    <string name="earnings" translatable="false">Earnings</string>
+    <string name="language_changed_successfully" translatable="false">Language Changed Successfully</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="fail" translatable="false">Fail</string>
+    <string name="facebook_app_id" translatable="false">295742548859359</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb295742548859359</string>
+    <string name="parent_phone" translatable="false">Parent Mobile No</string>
+    <string name="parent_full_name" translatable="false">Parent Full Name</string>
+    <string name="school_code" translatable="false">School Code</string>
+    <string name="school_name" translatable="false">School Name</string>
+    <string name="city" translatable="false">City</string>
+    <string name="select_state" translatable="false">Select State</string>
+    <string name="student_dob" translatable="false">Student DOB</string>
+    <string name="select_class" translatable="false">Select Class</string>
+    <string name="address" translatable="false">Address</string>
+    <string name="offline_mode" translatable="false">Offline Mode</string>
+    <string name="my_public_profile" translatable="false">My Public Profile</string>
+    <string name="API_KEY" translatable="false">trnsl.1.1.20170425T085917Z.580fec9ed721d387.9caf5bd2514ca1581b95de321974dce826ef5064</string>
+    <string name="start_new_translation" translatable="false">Text Translate</string>
+    <string name="new_conversation" translatable="false">Conversation</string>
+    <string name="new_translate" translatable="false">Translate</string>
+    <string name="hint_text" translatable="false">Tap to enter text</string>
+    <string name="no_internet_connection" translatable="false">No Internet Connection Available</string>
+    <string name="speech_prompt" translatable="false">Speak Now</string>
+    <string name="language_pack_missing" translatable="false">This language speech pack needs to be installed</string>
+    <string name="language_not_supported" translatable="false">This language speech is currently not supported</string>
+    <string name="select_matching_text" translatable="false">Select Matching Text</string>
+    <string name="process_tts" translatable="false">Switching Language</string>
+    <string name="no_text" translatable="false">No Text Available</string>
+    <string name="select_stage" translatable="false">Select Stage</string>
+    <string name="color_pallet" translatable="false">Color Pallet</string>
+
+    <string name="currency_convert" translatable="false">Currency Converter</string>
+    <string name="dot" translatable="false">.</string>
+    <string name="afn" translatable="false">AFN</string>
+    <string name="refresh" translatable="false">refresh</string>
+    <string name="convert" translatable="false">Convert</string>
+    <string name="contact" translatable="false">Contact</string>
+    <string name="from" translatable="false">From</string>
+    <string name="to" translatable="false">To</string>
+    <string name="amount" translatable="false">Amount</string>
+    <string name="bookmarks_and_notes" translatable="false">BOOKMARKS AND NOTES</string>
+    <string name="result" translatable="false">Result</string>
+    <string name="converted_amount" translatable="false">Converted Amount</string>
+
+    <string name="isRTL" translatable="false">false</string>
+
+    <!--    //drawing-->
+    <string name="saveDataPath" translatable="false">/Drawing/</string>
+    <string name="drawing" translatable="false">Drawing</string>
+    <string name="share_to" translatable="false">Share to</string>
+    <string name="share" translatable="false">Share</string>
+    <string name="loading" translatable="false">Loading....</string>
+    <string name="delete" translatable="false">Delete</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="select" translatable="false">Select</string>
+    <string name="chose_color" translatable="false">Chose Color</string>
+    <string name="Please_click_BACK_again_to_exit" translatable="false">Please click back again to exit</string>
+    <string name="cannot_use_save_share" translatable="false">Cannot use save feature please allow permission storage</string>
+    <string name="save_drawing" translatable="false">Drawing Saved to Internal Storage</string>
+
+    <string name="noData" translatable="false">No data found</string>
+    <string name="wrong" translatable="false">Something went to wrong please try again later</string>
+    <string name="basics" translatable="false">Basics</string>
+    <string name="select_city" translatable="false">Select City</string>
+
+    <!--Camera-->
+    <string name="crop_action_error" translatable="false">Sorry! image is not cropped.</string>
+    <string name="gallery_pick_error" translatable="false">Sorry! image is not picked from gallery. Please try again.</string>
+    <string name="camera_capture_error" translatable="false">Sorry! image is not captured. Please try again.</string>
+    <string name="crop_action_support" translatable="false">Sorry! your device doesn\'t support cropping action.</string>
+    <string name="choose_photo" translatable="false">Choose Photo</string>
+    <string name="camera" translatable="false">Camera</string>
+    <string name="gallery" translatable="false">Gallery</string>
+    <string name="webinar" translatable="false">Webinar</string>
+
+    <string name="my_all_child" translatable="false">My All Childs</string>
+    <string name="bank_details" translatable="false">Bank Details</string>
+    <string name="account_number" translatable="false">Account number</string>
+    <string name="account_holder_name" translatable="false">Account holder name</string>
+    <string name="ifsc_code" translatable="false">IFSC code</string>
+    <string name="branch_name" translatable="false">Branch name</string>
+    <string-array name="profession">
+        <item>School Student</item>
+        <item>College Student</item>
+        <item>Working</item>
+        <item>Housewife</item>
+        <item>Retired</item>
+    </string-array>
+
+    <string-array name="eye_sight">
+        <item>Quality</item>
+        <item>Number</item>
+    </string-array>
+
+    <string-array name="why_english">
+        <item>For better english skills in daily life (Social Life)</item>
+        <item>To score good marks in exams.</item>
+        <item>To visit abroad.</item>
+        <item>To study abroad.</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="_0_00">0.00 %</string>
+    <string name="report">Report</string>
+    <string name="settings">Settings</string>
+    <string name="crash_course">Crash Course</string>
+    <string name="havefun">Have Fun</string>
+    <string name="personality_dev_">Personality \nDevelopment</string>
+    <string name="practice_offline1">Practice \nSpeaking</string>
+    <string name="upgrade_course">Upgrade Course</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="language">Language</string>
+    <string name="sound_effet">Sound Effect</string>
+    <string name="notification_while">Notification While Learning</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="feedback">Feedback</string>
+    <string name="view">View</string>
+    <string name="change_language">Change</string>
+    <string name="add">Add</string>
+    <string name="logout">Logout</string>
+    <string name="invite_friend">Invite Friends</string>
+    <string name="bookmark_notes"><![CDATA[Bookmark & Notes]]></string>
+    <string name="rate_app">Rate App</string>
+    <string name="ask_a_question">Ask a Question</string>
+    <string name="contact_us">Contact us</string>
+    <string name="teacher_registration_form">Teacher Registration</string>
+    <string name="sync_coin">Sync Coin</string>
+    <string name="name">Name:</string>
+    <string name="total_coins" translatable="false">Total coins: </string>
+
+
+</resources>

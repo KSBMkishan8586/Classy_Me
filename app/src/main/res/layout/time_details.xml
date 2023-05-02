@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35">
+
+            <ImageView
+                android:id="@+id/iv_eyeblink"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ontu_logo" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_weight="0.45"
+            android:text="O'Clock" />
+
+
+        <TextView
+            android:id="@+id/tv_text_letslearn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="0.20"
+            android:text="Let's Learn Something Interesting"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/indigo"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="0.35"
+            android:gravity="end"
+            android:text="O'Clock"
+            android:textAllCaps="false"
+            android:textColor="@color/indigo"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/tv_o_clock"
+            android:layout_weight="0.45"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="0.20"
+            android:text="On Completion Of an Hour"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/indigo"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/tv_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="0.35"
+            android:gravity="end"
+            android:text="Half"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/tv_o_clock"
+            android:layout_weight="0.45"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="0.20"
+            android:text="On Completion Of 30 Minutes"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/tv_text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="0.35"
+            android:gravity="end"
+            android:text="Quarter"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/tv_o_clock"
+            android:layout_weight="0.45"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_text6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="0.20"
+            android:text="On Completion Of 15 Minutes"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/tv_text7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="0.35"
+            android:gravity="end"
+            android:text="AM"
+            android:textAllCaps="false"
+            android:textColor="@color/goldenrod"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/tv_o_clock"
+            android:layout_weight="0.45"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_text8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="0.20"
+            android:text="12 O'Clock Midnight to 12 O'Clock Noon"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/goldenrod"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/tv_text9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="0.35"
+            android:gravity="end"
+            android:text="PM"
+            android:textAllCaps="false"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/tv_o_clock"
+            android:layout_weight="0.45"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_text10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="0.20"
+            android:text="12 O'Clock Noon to 12 O'Clock Midnight"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

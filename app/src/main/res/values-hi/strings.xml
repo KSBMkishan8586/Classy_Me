@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">ClassyMe</string>
+    <string name="app_name_Character">Classy Mentor</string>
+
+    <string name="signup">साइन अप करें</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="create_account">खाता बनाएं</string>
+    <string name="touchlearn"><u>Touch &amp; Learn</u></string>
+    <string name="gmail">ईमेल</string>
+    <string name="phone">फ़ोन</string>
+    <string name="choose_pw">पासवर्ड चुनें</string>
+    <string name="signout">साइन आऊट</string>
+    <string name="update">अपडेट करें</string>
+    <string name="username">युजरनेम</string>
+    <string name="save">सेव करें</string>
+    <string name="send">भेंजे</string>
+    <string name="submit">सबमिट</string>
+    <string name="network_failure">नेटवर्क विफलता</string>
+    <string name="home">होम</string>
+    <string name="book_now">अभी बुक करें</string>
+    <string name="search"> खोजे..</string>
+    <string name="sch_name">स्कूल का नाम</string>
+    <string name="state">राज्य</string>
+    <string name="dob">DOB</string>
+    <string name="male">नर</string>
+    <string name="female">महिला</string>
+    <string name="next">अगला</string>
+    <string name="login_fb">फेसबुक से लॉगइन करें</string>
+    <string name="login_google">गूगल से लॉगइन करें</string>
+
+    <string name="alerts">अलर्ट</string>
+    <string name="fundamental_work">मौलिक कार्यपुस्तिका</string>
+    <string name="situation_ukg">स्थिति</string>
+    <string name="personality_dev">व्यक्तित्व विकास</string>
+    <string name="practice_offline">ऑफ़लाइन अभ्यास करें</string>
+    <string name="noun">संज्ञा</string>
+    <string name="manners">शिष्टाचार</string>
+    <string name="greetings">अभिवादन</string>
+    <string name="daily_routine">दिनचर्या</string>
+
+    <string name="select_language">भाषा चुने</string>
+    <string name="forgot_pw">पासवर्ड भूल गए?</string>
+    <string name="password">पासवर्ड</string>
+    <string name="id">आई डी</string>
+    <string name="forget_pw">पासवर्ड भूल गए</string>
+    <string name="how_to_test">परीक्षा कैसे दें</string>
+    <string name="dictionary">शब्दकोश</string>
+    <string name="translate">अनुवाद</string>
+    <string name="shop">दुकान</string>
+    <string name="permissions">अनुमतियाँ</string>
+    <string name="eye_sight">नेत्र दृष्टि:</string>
+    <string name="allow_notification">अधिसूचना की अनुमति दें:</string>
+    <string name="allow_location">स्थान की अनुमति दें:</string>
+    <string name="why_learn_english">आप अंग्रेजी क्यों सीखना चाहते हैं:</string>
+    <string name="enter_details_below">अपना विवरण नीचे दर्ज करें</string>
+    <string name="full_name">पूरा नाम</string>
+    <string name="select_gender">लिंग चुनें:</string>
+    <string name="select_profession">पेशे का चयन करें:</string>
+    <string name="signup_agree_terms">साइन अप करके, आप हमारे नियमों और शर्तों से सहमत हैं।</string>
+    <string name="look_appearence">लुक \nअपीयरेंस</string>
+    <string name="technology_problem">टेक्नोलॉजीज \nसमस्याएँ</string>
+    <string name="asking_help">मदद के लिए \nपूछना</string>
+    <string name="privacy">गोपनीयता</string>
+    <string name="situation">स्थिति</string>
+    <string name="or">अथवा</string>
+    <string name="report">रिपोर्ट</string>
+    <string name="settings">सेटिंग</string>
+    <string name="crash_course">क्रैश कोर्स</string>
+    <string name="havefun">मस्ती करो</string>
+    <string name="personality_dev_">व्यक्तित्व विकास</string>
+    <string name="practice_offline1">बोलने का अभ्यास करें</string>
+    <string name="upgrade_course">उन्नयन पाठ्यक्रम</string>
+    <string name="update_profile">प्रोफ़ाइल अपडेट करें</string>
+    <string name="language">भाषा</string>
+    <string name="sound_effet">साउंड इफेक्ट</string>
+    <string name="notification_while">सीखने के दौरान अधिसूचना</string>
+    <string name="help_support">सहायता और समर्थन</string>
+    <string name="feedback">प्रतिक्रिया</string>
+    <string name="view">देखें</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="add">जोड़ना</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="invite_friend">मित्रों को आमंत्रित करें</string>
+    <string name="bookmark_notes">बुकमार्क और नोट्स></string>
+    <string name="rate_app">एप्प का मूल्यांकन</string>
+    <string name="ask_a_question">प्रश्न पूछें</string>
+    <string name="contact_us">संपर्क करें</string>
+    <string name="teacher_registration_form">शिक्षक पंजीकरण</string>
+    <string name="sync_coin">सिंक सिक्का</string>
+    <string name="name">नाम:</string>
+
+
+
+    <string-array name="profession">
+        <item>विद्यालय का छात्र</item>
+        <item>कॉलेज के छात्र</item>
+        <item>काम कर रहे</item>
+        <item>गृहिणी</item>
+        <item>सेवनिवृत</item>
+    </string-array>
+
+    <string-array name="eye_sight">
+        <item>गुणवत्ता</item>
+        <item>नंबर</item>
+    </string-array>
+
+    <string-array name="why_english">
+        <item>दैनिक जीवन में बेहतर अंग्रेजी कौशल के लिए (सामाजिक जीवन)</item>
+        <item>परीक्षा में अच्छे अंक लाना</item>
+        <item>विदेश यात्रा के लिए</item>
+        <item>विदेश में अध्ययन करने के लिए</item>
+    </string-array>
+
+
+</resources>

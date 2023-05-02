@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.ksbm.ontu.alerts_module.model.WebinarModel.WebinarModelResponse" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/rect_sky_blue_border"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Webinar Details"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                    <!--                        <ImageView-->
+                    <!--                            android:layout_width="@dimen/_32sdp"-->
+                    <!--                            android:layout_height="@dimen/_32sdp"-->
+                    <!--                            android:layout_alignParentEnd="true"-->
+                    <!--                            android:layout_centerVertical="true"-->
+                    <!--                            android:layout_marginEnd="@dimen/_10sdp"-->
+                    <!--                            android:scaleType="fitXY"-->
+                    <!--                            android:src="@drawable/start_video">-->
+
+                    <!--                        </ImageView>-->
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/rel_mid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rel_toolbar"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_180sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@null"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_noticeImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:postImage="@{model.bannerImage}"
+                            android:scaleType="centerCrop" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:text=""
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_webinar_date"
+                        style="@style/text_14_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textAlignment="textStart"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tv_join"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/redius_red_bg"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Join"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/ll_webinar_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:text="Webinar Link"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:text="@{model.webinarLink}"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/blue"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_15sdp"
+                            android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_copy"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/redius_red_bg"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="Copy"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_open"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/redius_red_bg"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="Open Link"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:textStyle="bold">
+                        </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:src="@drawable/back_button">
+        </ImageView>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+
+    <path
+        android:fillColor="#dadada"
+        android:pathData="M30,30H22V4h8Z" />
+    <path
+        android:fillColor="#6cb3f4"
+        android:pathData="M20,30H12V12h8Z" />
+    <path
+        android:fillColor="#6cb3f4"
+        android:pathData="M10,30H2V18h8Z" />
+    <path
+        android:name="_Transparent_Rectangle_"
+        android:pathData="M 0 0 H 32 V 32 H 0 V 0 Z" />
+</vector>

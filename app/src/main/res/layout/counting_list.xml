@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.ksbm.ontu.foundation.model.CountingModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:text="@{model.count}"
+            style="@style/TextShadowStyle"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="?android:attr/selectableItemBackground"
+            android:textSize="@dimen/_42sdp"
+            android:textStyle="bold">
+        </TextView>
+
+
+    </LinearLayout>
+</layout>

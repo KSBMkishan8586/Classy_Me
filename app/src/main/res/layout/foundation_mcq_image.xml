@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="personalityAdapter"
+            type="com.ksbm.ontu.fundamental.adapter.Fundamental_Touch_Fill_Word_Adapter" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/rel_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            layout="@layout/user_ontu_coin_layout">
+        </include>
+
+
+        <TextView
+            android:id="@+id/tv_workbookname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_toolbar"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Workbook 1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:visibility="invisible">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_workbookname"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/card_bg_gold"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/tv_quiz_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="Noun"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_layout"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/card_bg_gold"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="1. Noun"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_22sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_quiz_image"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:src="@drawable/ankit"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_i_quiz"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/i_button"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_quiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:weightSum="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_radio1"
+                            android:layout_weight="0.5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_32sdp"
+                                android:gravity="center"
+                                android:textSize="@dimen/_24sdp"
+                                android:textColor="@color/black"
+                                android:text="1."/>
+
+                            <ImageView
+                                android:id="@+id/iv_radio1"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/ankit" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_radio2"
+                            android:layout_weight="0.5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_32sdp"
+                                android:gravity="center"
+                                android:textSize="@dimen/_24sdp"
+                                android:textColor="@color/black"
+                                android:text="2."/>
+
+                            <ImageView
+                                android:id="@+id/iv_radio2"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/ankit" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:weightSum="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:visibility="invisible"
+                            android:id="@+id/ll_radio3"
+                            android:layout_weight="0.5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_32sdp"
+                                android:gravity="center"
+                                android:textSize="@dimen/_24sdp"
+                                android:textColor="@color/black"
+                                android:text="3."/>
+
+                            <ImageView
+                                android:id="@+id/iv_radio3"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/ankit" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="invisible"
+                            android:id="@+id/ll_radio4"
+                            android:layout_weight="0.5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_32sdp"
+                                android:gravity="center"
+                                android:textSize="@dimen/_24sdp"
+                                android:textColor="@color/black"
+                                android:text="4."/>
+
+                            <ImageView
+                                android:id="@+id/iv_radio4"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/ankit" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="personalityAdapter"
+            type="com.ksbm.ontu.personality_dev.adapter.PersonalityCategory_List_Adapter" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rlscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_bg"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_menu"
+                            android:layout_width="@dimen/_32sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/menu_icon">
+
+                        </ImageView>
+
+                        <com.skydoves.elasticviews.ElasticLayout
+                            android:id="@+id/card_situation"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_toStartOf="@+id/iv_coin"
+                            android:layout_toEndOf="@+id/iv_menu"
+                            app:cardCornerRadius="@dimen/_8sdp"
+                            app:layout_duration="300"
+                            app:layout_scale="0.95">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/personality_development">
+
+                                <RelativeLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp">
+
+
+                                    <!--                                    <androidx.cardview.widget.CardView-->
+                                    <!--                                        android:layout_width="match_parent"-->
+                                    <!--                                        android:layout_height="match_parent"-->
+                                    <!--                                        android:layout_margin="@dimen/_7sdp"-->
+                                    <!--                                        app:cardBackgroundColor="@color/lime_green"-->
+                                    <!--                                        app:cardCornerRadius="@dimen/_8sdp"-->
+                                    <!--                                        app:cardElevation="@dimen/_12sdp">-->
+
+                                    <TextView
+                                        android:id="@+id/tv_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:paddingStart="@dimen/_15sdp"
+                                        android:text="@string/personality_dev_"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_13sdp"
+                                        android:textStyle="bold">
+
+                                    </TextView>
+
+                                    <!--                                    </androidx.cardview.widget.CardView>-->
+
+                                </RelativeLayout>
+
+
+                                <ImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    android:src="@drawable/personality_developement">
+
+                                </ImageView>
+
+                            </LinearLayout>
+
+                        </com.skydoves.elasticviews.ElasticLayout>
+
+
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:id="@+id/card_situation"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:layout_margin="@dimen/_5sdp"-->
+<!--                            android:layout_toStartOf="@+id/iv_coin"-->
+<!--                            android:layout_toEndOf="@+id/iv_menu"-->
+<!--                            app:cardCornerRadius="@dimen/_8sdp"-->
+<!--                            app:cardBackgroundColor="@color/blue_btn_bg_color"-->
+<!--                            app:cardElevation="@dimen/_8sdp">-->
+
+
+<!--                            <androidx.cardview.widget.CardView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_margin="@dimen/_5sdp"-->
+<!--                                app:cardBackgroundColor="@color/deep_pink"-->
+<!--                                app:cardCornerRadius="@dimen/_8sdp"-->
+<!--                                app:cardElevation="@dimen/_8sdp">-->
+
+<!--                                <RelativeLayout-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content">-->
+
+<!--                                    <RelativeLayout-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="@dimen/_45sdp"-->
+<!--                                        android:layout_centerInParent="true"-->
+<!--                                        android:layout_toStartOf="@+id/iv_couse_image">-->
+
+<!--                                        <TextView-->
+<!--                                            android:id="@+id/tv_title"-->
+<!--                                            android:layout_width="match_parent"-->
+<!--                                            android:layout_height="wrap_content"-->
+<!--                                            android:layout_alignParentStart="true"-->
+<!--                                            android:layout_centerInParent="true"-->
+<!--                                            android:gravity="start"-->
+<!--                                            android:paddingStart="@dimen/_10sdp"-->
+<!--                                            android:text="@string/personality_dev_"-->
+<!--                                            android:textAlignment="textStart"-->
+<!--                                            android:textColor="@color/white"-->
+<!--                                            android:textSize="@dimen/_14sdp"-->
+<!--                                            android:textStyle="bold">-->
+
+<!--                                        </TextView>-->
+
+<!--                                    </RelativeLayout>-->
+
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/iv_couse_image"-->
+<!--                                        android:layout_width="@dimen/_30sdp"-->
+<!--                                        android:layout_height="@dimen/_30sdp"-->
+<!--                                        android:layout_alignParentEnd="true"-->
+<!--                                        android:layout_centerVertical="true"-->
+<!--                                        android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                                        android:src="@drawable/personality_developement">-->
+
+<!--                                    </ImageView>-->
+
+<!--                                </RelativeLayout>-->
+
+<!--                            </androidx.cardview.widget.CardView>-->
+
+
+<!--                        </androidx.cardview.widget.CardView>-->
+
+                        <ImageView
+                            android:id="@+id/iv_coin"
+                            android:layout_width="@dimen/_32sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/start_video">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/rel_mid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_toolbar"
+                        android:orientation="vertical">
+
+                        <SearchView
+                            android:id="@+id/searchView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:queryHint="Search..."
+                            android:iconifiedByDefault="false"
+                            android:layout_gravity="center"
+                            app:theme="@style/AppSearchView"
+                            android:background="@drawable/rect_sky_blue_edit"
+                            />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclelist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adapter="@{personalityAdapter}"
+                            android:orientation="vertical"
+                            android:scrollbars="none"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/back_button">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+</layout>

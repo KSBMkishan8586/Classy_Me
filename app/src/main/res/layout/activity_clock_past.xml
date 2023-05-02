@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/whitebackground"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/fullScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <include
+                        android:id="@+id/header"
+                        layout="@layout/alert_and_freecoin_header"
+                        android:layout_width="375dp"
+                        android:layout_height="match_parent" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="130dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/time_to_past"
+                        android:layout_width="match_parent"
+                        android:layout_height="523dp"></include>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/layout_button"
+                    layout="@layout/next_previous_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_back"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/back_button"
+                    android:visibility="gone">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

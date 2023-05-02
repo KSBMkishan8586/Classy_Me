@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/slider_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="1.5dp" />
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:id="@+id/Goback"
+            android:src="@drawable/ic_close"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circle_red"
+            app:tint="@color/white" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_skip"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_40sdp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:gravity="center"-->
+<!--            android:background="@color/red_500"-->
+<!--            android:padding="@dimen/_10sdp"-->
+<!--            android:text="Close"-->
+<!--            android:textSize="@dimen/_16sdp"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"-->
+<!--            android:visibility="visible" />-->
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</layout>

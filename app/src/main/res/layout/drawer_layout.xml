@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/man_ls"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/drawer1"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_55sdp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/powder_blue"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_55sdp"
+        android:layout_marginRight="70dp">
+
+        <!--                <LinearLayout-->
+        <!--                    android:id="@+id/ll_search"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="@dimen/_80sdp"-->
+        <!--                    android:background="@color/sky_blue"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:orientation="vertical">-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_margin="@dimen/_10sdp"-->
+        <!--                        android:background="@drawable/rect_edit_bg"-->
+        <!--                        android:drawableStart="@drawable/ic_baseline_search_24"-->
+        <!--                        android:drawablePadding="@dimen/_5sdp"-->
+        <!--                        android:hint="@string/search"-->
+        <!--                        android:padding="@dimen/_5sdp">-->
+
+        <!--                    </TextView>-->
+
+        <!--                </LinearLayout>-->
+
+        <!--                <View-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="@dimen/_1sdp"-->
+        <!--                    android:layout_below="@id/ll_search"-->
+        <!--                    android:background="@color/light_black1"></View>-->
+
+
+        <LinearLayout
+            android:id="@+id/searchll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="#11000000"
+            android:padding="@dimen/_5sdp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_box"
+                android:backgroundTint="@color/light_grey"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:hint="@string/search" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchll"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/upgrade_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/upgrade_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/upgrade_course"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="@string/upgrade_course"
+                    android:textSize="@dimen/_12sdp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_invite_frnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/invite_friend"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="@string/invite_friend"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/bookmarks_notes"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="@string/bookmark_notes"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_rate_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_star_rate_24"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="@string/rate_app"
+                    android:textSize="@dimen/_12sdp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ask_a_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ask_question_logo"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="@string/ask_a_question"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contact_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_contact_phone_24"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="@string/contact_us"
+                    android:textSize="@dimen/_12sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_teacher_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/checklist"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="@string/teacher_registration_form"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+            </LinearLayout>
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/memoryMap"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="@dimen/_5sdp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_24sdp"-->
+<!--                    android:layout_height="@dimen/_24sdp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:src="@drawable/memory_map"></ImageView>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:padding="@dimen/_5sdp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:text="@string/memory_map"-->
+<!--                    android:textSize="@dimen/_12sdp"></TextView>-->
+
+<!--            </LinearLayout>-->
+
+
+            <LinearLayout
+                android:id="@+id/ll_sync_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/sync_coins"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:text="@string/sync_coin"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_rate_app"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="@dimen/_5sdp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:padding="@dimen/_5sdp"-->
+<!--                    android:text="@string/rate_app"-->
+<!--                    android:textSize="@dimen/_16sdp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"></TextView>-->
+
+<!--                &lt;!&ndash;                                        <androidx.appcompat.widget.AppCompatRatingBar&ndash;&gt;-->
+<!--                &lt;!&ndash;                                            style="@style/Widget.AppCompat.RatingBar.Small"&ndash;&gt;-->
+<!--                &lt;!&ndash;                                            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                                            android:layout_gravity="center_vertical"&ndash;&gt;-->
+<!--                &lt;!&ndash;                                            android:foregroundGravity="center_vertical">&ndash;&gt;-->
+<!--                &lt;!&ndash;                                        </androidx.appcompat.widget.AppCompatRatingBar>&ndash;&gt;-->
+
+<!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_55sdp">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

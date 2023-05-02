@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ksbm.ontu">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXT ERNAL_STORAGE"
+        tools:remove="android:maxSdkVersion"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:remove="android:maxSdkVersion"/>
+    <uses-permission
+        android:name="android.permission.WRITE_MEDIA_STORAGE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" /> <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".utils.App"
+        android:allowBackup="true"
+        android:autoRevokePermissions="allowed"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.OntuApp"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup,supportsRtl,icon,theme,label,android:usesCleartextTraffic"
+        tools:targetApi="r">
+        <activity
+            android:name=".main_screen.YoutubeVideoA"
+            android:exported="false" />
+        <activity
+            android:name=".foundation.activity.ClockPastActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".open_market.FillDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".open_market.ProfeciencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".open_market.AgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".open_market.GenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main_screen.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".foundation.activity.DirectionSwipeNewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".foundation.activity.DirectionSixRelativeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".foundation.activity.BodyPartDropB"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main_screen.DrawerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".foundation.activity.BodyPartBackA"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".foundation.activity.BodyPartBackB"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".foundation.activity.BodyPartActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".foundation.activity.FoundationWinnerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".profile.activity.AllCompetitionList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.BodyPartDrop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".profile.activity.MyChildActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".main_screen.OneTimeBannerDialog"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.ThreeD_ImageViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.Foundation_Splash"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".alerts_module.CalendarNotesAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".alerts_module.CalendarNotesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".alerts_module.CalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".alerts_module.Webinar_Details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".alerts_module.WebinarListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".alerts_module.NoticeBoard_Details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.Body_Parts_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.FoundationQuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.ClockLearnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".alerts_module.NoticeBoard_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".alerts_module.UpdateAlert_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".free_coin.FreeCoinDialog"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:exported="false"
+            android:name=".alerts_module.Alerts_Dialog"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:exported="false"
+            android:name=".practice_offline.activity.MemoryMapQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.time.ClockHandMoveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.CurrencyDenominationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.Currency_Country_Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".foundation.activity.CurrencyLearnActivity" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.AnimalTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.drawing.DrawingImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.drawing.ColorChose"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.drawing.Drawing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.time.LiveClockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.CurrencyExchangeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.DateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.DirectionSwipeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.DirectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.Direction_Add_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.SingleColorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.CountingStarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".practice_offline.activity.OfflineQuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.ColorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.MonthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.Counting_Note_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.Counting_Details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.Counting_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.Animal_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".foundation.activity.Alphabet_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".personality_dev.PersonalityQuizDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:exported="false"
+            android:name=".custom_class.PhotoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".main_screen.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".personality_dev.PersonalityVideoPlayer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".situation.SituationQuizPatternActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".situation.SituationQuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".fundamental.activity.Fundamental_TouchTheWord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".fundamental.activity.Fundamental_Jumble_Arrange"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".fundamental.activity.Fundamental_Quiz_Match_Following"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".fundamental.activity.FundamentalQuizTouchFill"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".fundamental.activity.FundamentalQuizMCQ"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".fundamental.activity.Fundamental_Quiz_CheckBox"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".fundamental.activity.Fundamental_Quiz_Winner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".free_coin.login_signup.OtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".free_coin.login_signup.add_parent.ProfileUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".fundamental.activity.Fundamental_Quiz_Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:exported="false"
+            android:name=".fundamental.activity.Fundamental_Quiz_Drag_Drop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".fundamental.activity.VideoPlayer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".free_coin.FreeCoinVideoPlayer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".free_coin.login_signup.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".main_screen.HowToTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".free_coin.login_signup.PermissionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".free_coin.login_signup.ForgotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".main_screen.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".free_coin.login_signup.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="false"
+            android:name=".free_coin.login_signup.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash_Activity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_0fgMyINdf2my7c" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/red_500" />
+
+        <service
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".firebase.MyBroadcastReceiver" />
+
+        <service
+            android:name=".service.BackgroundMusicService"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".custom_class.CameraActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

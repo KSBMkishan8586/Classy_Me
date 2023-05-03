@@ -69,6 +69,7 @@ import com.ksbm.ontu.translation.TranslateFragment;
 import com.ksbm.ontu.utils.Connectivity;
 import com.ksbm.ontu.utils.Constant;
 import com.ksbm.ontu.utils.MeraSharedPreferance;
+import com.ksbm.ontu.utils.Utils;
 
 import darren.googlecloudtts.GoogleCloudTTS;
 import darren.googlecloudtts.GoogleCloudTTSFactory;
@@ -162,8 +163,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //  if (SessionManager.getCurrentLanguage(MainActivity.this)!=null)
-        // Utils.setLanguageForApp(SessionManager.getCurrentLanguage(MainActivity.this), MainActivity.this);
-
+         Utils.setLanguageForApp(SessionManager.getCurrentLanguage(MainActivity.this), MainActivity.this);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         meraSharedPreferance = MeraSharedPreferance.getInstance(this);

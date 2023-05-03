@@ -49,7 +49,8 @@ public class FreeCoin_Adapter extends RecyclerView.Adapter<FreeCoin_Adapter.View
 
         if (dataModel.getIsUsed().equalsIgnoreCase("yes")){
             holder.itemRowBinding.cardPlayer.setCardBackgroundColor(context.getResources().getColor(R.color.green));
-            holder.itemRowBinding.tvCollect.setText("Collected");
+            holder.itemRowBinding.tvCollect.setText(R.string.collected);
+            holder.itemRowBinding.freeCoinGif.setVisibility(View.VISIBLE);
         }
 
         holder.itemRowBinding.cardPlayer.setOnClickListener(new View.OnClickListener() {

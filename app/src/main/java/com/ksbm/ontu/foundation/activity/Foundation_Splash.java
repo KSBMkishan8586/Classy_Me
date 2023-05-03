@@ -1,29 +1,5 @@
 package com.ksbm.ontu.foundation.activity;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
-import com.bumptech.glide.Glide;
-import com.ksbm.ontu.R;
-import com.ksbm.ontu.alerts_module.Alerts_Dialog;
-import com.ksbm.ontu.custom_class.Speach_Record_Activity;
-import com.ksbm.ontu.databinding.FragmentOfflineSplashBinding;
-import com.ksbm.ontu.foundation.time.LiveClockActivity;
-import com.ksbm.ontu.foundation.drawing.DrawingImageActivity;
-import com.ksbm.ontu.free_coin.FreeCoinDialog;
-import com.ksbm.ontu.session.SessionManager;
-import com.ksbm.ontu.utils.Constant;
-import com.ksbm.ontu.utils.Utils;
-
 import static com.ksbm.ontu.utils.Constant.ABCD;
 import static com.ksbm.ontu.utils.Constant.Animals;
 import static com.ksbm.ontu.utils.Constant.Body_Parts;
@@ -37,6 +13,27 @@ import static com.ksbm.ontu.utils.Constant.Fruits_Vegetables;
 import static com.ksbm.ontu.utils.Constant.Months;
 import static com.ksbm.ontu.utils.Constant.Time;
 import static com.ksbm.ontu.utils.Constant.Weekdays;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
+import com.bumptech.glide.Glide;
+import com.ksbm.ontu.R;
+import com.ksbm.ontu.alerts_module.Alerts_Dialog;
+import com.ksbm.ontu.custom_class.Speach_Record_Activity;
+import com.ksbm.ontu.databinding.FragmentOfflineSplashBinding;
+import com.ksbm.ontu.foundation.drawing.DrawingImageActivity;
+import com.ksbm.ontu.foundation.time.LiveClockActivity;
+import com.ksbm.ontu.free_coin.FreeCoinDialog;
+import com.ksbm.ontu.session.SessionManager;
+import com.ksbm.ontu.utils.Constant;
+import com.ksbm.ontu.utils.Utils;
 
 public class Foundation_Splash extends AppCompatActivity {
     FragmentOfflineSplashBinding binding;
@@ -71,10 +68,10 @@ public class Foundation_Splash extends AppCompatActivity {
         });
         if (foundation_id.equalsIgnoreCase(Colors)) {
             binding.relOther.setVisibility(View.VISIBLE);
-            binding.tvTypeName.setText("Drawing");
+            binding.tvTypeName.setText(getText(R.string.drawing));
         } else if (foundation_id.equalsIgnoreCase(Time)) {
             binding.relOther.setVisibility(View.VISIBLE);
-            binding.tvTypeName.setText("Live Clock");
+            binding.tvTypeName.setText(getText(R.string.live_clock));
         }
 
 

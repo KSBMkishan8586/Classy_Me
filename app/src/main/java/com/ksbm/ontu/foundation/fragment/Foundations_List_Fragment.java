@@ -213,12 +213,12 @@ public class Foundations_List_Fragment extends Fragment {
 
         binding.recyclelist.setVisibility(View.VISIBLE);
         List<FoundationTypeModel> personalityModels=new ArrayList<FoundationTypeModel>();
-        personalityModels.add(new FoundationTypeModel("Basics", R.drawable.basics_foundation));
-        personalityModels.add(new FoundationTypeModel("Directions", R.drawable.direction_iocn));
-        personalityModels.add(new FoundationTypeModel("Date", R.drawable.date));
-        personalityModels.add(new FoundationTypeModel("Time", R.drawable.time));
-        personalityModels.add(new FoundationTypeModel("Colours", R.drawable.colors_icon));
-        personalityModels.add(new FoundationTypeModel("Body Parts", R.drawable.full_body_iconnn));
+        personalityModels.add(new FoundationTypeModel(getString(R.string.basics), R.drawable.basics_foundation));
+        personalityModels.add(new FoundationTypeModel(getString(R.string.directions), R.drawable.direction_iocn));
+        personalityModels.add(new FoundationTypeModel(getString(R.string.date), R.drawable.date));
+        personalityModels.add(new FoundationTypeModel(getString(R.string.time), R.drawable.time));
+        personalityModels.add(new FoundationTypeModel(getString(R.string.colours), R.drawable.colors_icon));
+        personalityModels.add(new FoundationTypeModel(getString(R.string.body_parts), R.drawable.full_body_iconnn));
 
         FoundationList_Adapter friendsAdapter = new FoundationList_Adapter(personalityModels,getActivity(),getActivity());
         binding.setPersonalityAdapter(friendsAdapter);//set databinding adapter

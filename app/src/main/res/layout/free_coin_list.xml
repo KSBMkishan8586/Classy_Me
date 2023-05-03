@@ -23,12 +23,15 @@
         app:cardBackgroundColor="@color/header_bg_color"
         app:cardCornerRadius="@dimen/_4sdp">
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="horizontal"
             android:weightSum="1">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,6 +50,8 @@
                     android:layout_marginBottom="@dimen/_5sdp"
                     app:cardBackgroundColor="@color/sky_blue"
                     >
+
+
 
                     <TextView
                         android:id="@+id/tv_serial"
@@ -84,6 +89,8 @@
                         android:textSize="@dimen/_14sdp"
                         android:textStyle="bold" />
 
+
+
                     <!--                    <TextView-->
                     <!--                        android:layout_width="wrap_content"-->
                     <!--                        android:layout_height="wrap_content"-->
@@ -103,6 +110,8 @@
                     android:rotation="180"
                     android:layout_margin="@dimen/_2sdp"
                     android:src="@drawable/free_coins" />
+
+
 
 
             </LinearLayout>
@@ -129,6 +138,8 @@
                     app:cardBackgroundColor="@color/sky_blue"
                     >
 
+
+
                     <TextView
                         android:id="@+id/tv_collect"
                         android:layout_width="wrap_content"
@@ -145,6 +156,14 @@
                         android:textStyle="bold">
 
                     </TextView>
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/free_coin_gif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:src="@drawable/gif_coin" />
+
 
                 </androidx.cardview.widget.CardView>
 

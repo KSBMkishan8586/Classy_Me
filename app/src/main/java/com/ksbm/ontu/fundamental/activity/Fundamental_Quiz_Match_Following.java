@@ -278,25 +278,25 @@ public class Fundamental_Quiz_Match_Following extends AppCompatActivity {
                         binding.textRowRight1.setBackground(getResources().getDrawable(R.drawable.circle_fill_green));
                         binding.textRowRight1.setEnabled(false);
                         Toast.makeText(context, "Right", Toast.LENGTH_SHORT).show();
-
                         got_total_reward = got_total_reward + Integer.parseInt(quizDetails.get(ques_position).getReward());
                         CommonUtil.SubmitQuiz(sessionManager.getUser().getUserid(), quiz_id, quizDetails.get(ques_position).getReward(), "1", quizDetails.get(ques_position).getQuiz_question_id());//1=right ans
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvUserCoin.setText(""+got_total_reward);
+                        Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Match_Following.this);
 
                     }else {
                         binding.textRowRight1.setBackground(getResources().getDrawable(R.drawable.circle_fill_red));
                         binding.textRowRight1.setEnabled(false);
                         Toast.makeText(context, "Wrong", Toast.LENGTH_SHORT).show();
-
                         got_ontu_total_reward = got_ontu_total_reward + Integer.parseInt(quizDetails.get(ques_position).getReward());
                         CommonUtil.SubmitQuiz(sessionManager.getUser().getUserid(), quiz_id, quizDetails.get(ques_position).getReward(), "0", quizDetails.get(ques_position).getQuiz_question_id());//0= wrong answer
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvOntuCoin.setText(""+got_ontu_total_reward);
+                        Utils.playMusic(R.raw.wrong_selected, Fundamental_Quiz_Match_Following.this);
                     }
-                    Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Match_Following.this);
+
 
                 }
 
@@ -329,6 +329,7 @@ public class Fundamental_Quiz_Match_Following extends AppCompatActivity {
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvUserCoin.setText(""+got_total_reward);
+                        Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Match_Following.this);
                     }else {
                         binding.textRowRight2.setBackground(getResources().getDrawable(R.drawable.circle_fill_red));
                         binding.textRowRight2.setEnabled(false);
@@ -339,8 +340,9 @@ public class Fundamental_Quiz_Match_Following extends AppCompatActivity {
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvOntuCoin.setText(""+got_ontu_total_reward);
+                        Utils.playMusic(R.raw.wrong_selected, Fundamental_Quiz_Match_Following.this);
                     }
-                    Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Match_Following.this);
+
                 }
 
                 TxtSelectQuestion="";
@@ -371,6 +373,7 @@ public class Fundamental_Quiz_Match_Following extends AppCompatActivity {
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvUserCoin.setText(""+got_total_reward);
+                        Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Match_Following.this);
                     }else {
                         binding.textRowRight3.setBackground(getResources().getDrawable(R.drawable.circle_fill_red));
                         binding.textRowRight3.setEnabled(false);
@@ -381,8 +384,9 @@ public class Fundamental_Quiz_Match_Following extends AppCompatActivity {
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvOntuCoin.setText(""+got_ontu_total_reward);
+                        Utils.playMusic(R.raw.wrong_selected, Fundamental_Quiz_Match_Following.this);
                     }
-                    Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Match_Following.this);
+
                 }
 
                 TxtSelectQuestion="";
@@ -407,12 +411,12 @@ public class Fundamental_Quiz_Match_Following extends AppCompatActivity {
                         binding.textRowRight4.setBackground(getResources().getDrawable(R.drawable.circle_fill_green));
                         binding.textRowRight4.setEnabled(false);
                         Toast.makeText(context, "Right", Toast.LENGTH_SHORT).show();
-
                         got_total_reward = got_total_reward + Integer.parseInt(quizDetails.get(ques_position).getReward());
                         CommonUtil.SubmitQuiz(sessionManager.getUser().getUserid(), quiz_id, quizDetails.get(ques_position).getReward(), "1", quizDetails.get(ques_position).getQuiz_question_id());//1=right ans
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvUserCoin.setText(""+got_total_reward);
+                        Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Match_Following.this);
                     }else {
                         binding.textRowRight4.setBackground(getResources().getDrawable(R.drawable.circle_fill_red));
                         binding.textRowRight4.setEnabled(false);
@@ -423,8 +427,9 @@ public class Fundamental_Quiz_Match_Following extends AppCompatActivity {
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvOntuCoin.setText(""+got_ontu_total_reward);
+                        Utils.playMusic(R.raw.wrong_selected, Fundamental_Quiz_Match_Following.this);
                     }
-                    Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Match_Following.this);
+
                 }
 
                 TxtSelectQuestion="";
@@ -449,24 +454,23 @@ public class Fundamental_Quiz_Match_Following extends AppCompatActivity {
                         binding.textRowRight5.setBackground(getResources().getDrawable(R.drawable.circle_fill_green));
                         binding.textRowRight5.setEnabled(false);
                         Toast.makeText(context, "Right", Toast.LENGTH_SHORT).show();
-
                         got_total_reward = got_total_reward + Integer.parseInt(quizDetails.get(ques_position).getReward());
                         CommonUtil.SubmitQuiz(sessionManager.getUser().getUserid(), quiz_id, quizDetails.get(ques_position).getReward(), "1", quizDetails.get(ques_position).getQuiz_question_id());//1=right ans
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvUserCoin.setText(""+got_total_reward);
+                        Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Match_Following.this);
                     }else {
                         binding.textRowRight5.setBackground(getResources().getDrawable(R.drawable.circle_fill_red));
                         binding.textRowRight5.setEnabled(false);
                         Toast.makeText(context, "Wrong", Toast.LENGTH_SHORT).show();
-
                         got_ontu_total_reward = got_ontu_total_reward + Integer.parseInt(quizDetails.get(ques_position).getReward());
                         CommonUtil.SubmitQuiz(sessionManager.getUser().getUserid(), quiz_id, quizDetails.get(ques_position).getReward(), "0", quizDetails.get(ques_position).getQuiz_question_id());//0= wrong answer
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvOntuCoin.setText(""+got_ontu_total_reward);
+                        Utils.playMusic(R.raw.wrong_selected, Fundamental_Quiz_Match_Following.this);
                     }
-                    Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Match_Following.this);
                 }
                 TxtSelectQuestion="";
                 TxtRighAns= "";

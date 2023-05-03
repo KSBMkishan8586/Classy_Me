@@ -93,7 +93,7 @@ dependencies {
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.1'
     implementation 'com.danikula:videocache:2.7.0'
     //google
-    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
     //firebase
     implementation platform('com.google.firebase:firebase-bom:27.0.0')
     implementation 'com.google.firebase:firebase-core:18.0.3'
@@ -134,14 +134,9 @@ dependencies {
     implementation 'com.github.pedromassango:doubleClick:3.0'
 
     //youtube
-
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.23'
-
     implementation 'com.razorpay:checkout:1.5.8'
-
-
-
     implementation 'com.akexorcist:round-corner-progress-bar:2.1.2'
 
 

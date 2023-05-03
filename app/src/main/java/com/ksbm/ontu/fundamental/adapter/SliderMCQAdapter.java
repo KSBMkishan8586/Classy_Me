@@ -175,7 +175,6 @@ public class SliderMCQAdapter extends PagerAdapter {
                 //Toast.makeText(context, "right", Toast.LENGTH_SHORT).show();
                 radio.setTextColor(context.getResources().getColor(R.color.green));
                 ivIQuiz.setVisibility(View.GONE);
-
                 CommonUtil.SubmitQuiz(sessionManager.getUser().getUserid(), quiz_id, quizDetails.get(quiz_position).getReward(), "1", quizDetails.get(quiz_position).getQuiz_question_id());//1=right ans
                 ((FundamentalQuizMCQ)context).CoinAnimated(true, quizDetails.get(quiz_position).getReward() );
 

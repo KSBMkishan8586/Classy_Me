@@ -153,7 +153,7 @@ public class Fundamental_TouchTheWord extends AppCompatActivity {
                             spannable.setSpan(new ForegroundColorSpan(Color.GREEN), iStart, iEnd, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                             quizDetails.get(quiz_position).setRightAnswer(true);
                             binding.ivIQuiz.setVisibility(View.GONE);
-
+                            Utils.playMusic(R.raw.coin_sound, Fundamental_TouchTheWord.this);
                             got_total_reward = got_total_reward + Integer.parseInt(quizDetails.get(quiz_position).getReward());
                             CommonUtil.SubmitQuiz(sessionManager.getUser().getUserid(), quiz_id, quizDetails.get(quiz_position).getReward(), "1", quizDetails.get(quiz_position).getQuiz_question_id());//1=right ans
                             binding.relToolbar.ivUsersideCoinImg.setVisibility(View.VISIBLE);
@@ -164,7 +164,7 @@ public class Fundamental_TouchTheWord extends AppCompatActivity {
                             spannable.setSpan(new ForegroundColorSpan(Color.RED), iStart, iEnd, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                             quizDetails.get(quiz_position).setRightAnswer(false);
                             binding.ivIQuiz.setVisibility(View.VISIBLE);
-
+                            Utils.playMusic(R.raw.wrong_selected, Fundamental_TouchTheWord.this);
                             got_ontu_total_reward = got_ontu_total_reward + Integer.parseInt(quizDetails.get(quiz_position).getReward());
                             CommonUtil.SubmitQuiz(sessionManager.getUser().getUserid(), quiz_id, quizDetails.get(quiz_position).getReward(), "0", quizDetails.get(quiz_position).getQuiz_question_id());//0= wrong answer
                             binding.relToolbar.ivOntuSideCoin.setVisibility(View.VISIBLE);
@@ -173,7 +173,7 @@ public class Fundamental_TouchTheWord extends AppCompatActivity {
 
                         }
 
-                        Utils.playMusic(R.raw.coin_sound, Fundamental_TouchTheWord.this);
+
                         if (!binding.relToolbar.tvCoin.getText().toString().equalsIgnoreCase("0")){
                             int remain_coin= Integer.parseInt(binding.relToolbar.tvCoin.getText().toString()) -
                                     Integer.parseInt(quizDetails.get(quiz_position).getReward());

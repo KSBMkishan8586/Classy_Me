@@ -158,13 +158,15 @@ public class FundamentalQuizMCQ extends AppCompatActivity {
             binding.relToolbar.ivUsersideCoinImg.setVisibility(View.VISIBLE);
             binding.relToolbar.ivOntuSideCoin.setVisibility(View.INVISIBLE);
             binding.relToolbar.tvUserCoin.setText(""+got_total_reward);
+            Utils.playMusic(R.raw.coin_sound, FundamentalQuizMCQ.this);
         }else {
             got_ontu_total_reward = got_ontu_total_reward + Integer.parseInt(reward);
             binding.relToolbar.ivOntuSideCoin.setVisibility(View.VISIBLE);
             binding.relToolbar.ivUsersideCoinImg.setVisibility(View.INVISIBLE);
             binding.relToolbar.tvOntuCoin.setText(""+got_ontu_total_reward);
+            Utils.playMusic(R.raw.wrong_selected, FundamentalQuizMCQ.this);
         }
-        Utils.playMusic(R.raw.coin_sound, FundamentalQuizMCQ.this);
+//        Utils.playMusic(R.raw.coin_sound, FundamentalQuizMCQ.this);
         int remain_coin= Integer.parseInt(binding.relToolbar.tvCoin.getText().toString()) -
                 Integer.parseInt(reward);
         binding.relToolbar.tvCoin.setText(""+remain_coin);

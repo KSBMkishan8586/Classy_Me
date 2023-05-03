@@ -1,7 +1,6 @@
 package com.ksbm.ontu.fundamental.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
+import static com.ksbm.ontu.utils.Constant.Passing_percent;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -16,6 +15,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import com.bumptech.glide.Glide;
 import com.github.florent37.viewanimator.ViewAnimator;
 import com.ksbm.ontu.R;
@@ -23,7 +25,6 @@ import com.ksbm.ontu.api_client.Api_Call;
 import com.ksbm.ontu.api_client.Base_Url;
 import com.ksbm.ontu.api_client.RxApiClient;
 import com.ksbm.ontu.databinding.ActivityFundamentalQuizWinnerBinding;
-import com.ksbm.ontu.foundation.activity.FoundationWinnerActivity;
 import com.ksbm.ontu.fundamental.model.fundamental_mcq_model.Fundamental_MCQ_Model;
 import com.ksbm.ontu.fundamental.model.fundamental_quiz_model.Fundamental_Quiz_Model;
 import com.ksbm.ontu.fundamental.model.jumble_arrange_model.JumbleArrangeModel;
@@ -41,8 +42,6 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
 import retrofit2.adapter.rxjava2.HttpException;
-
-import static com.ksbm.ontu.utils.Constant.Passing_percent;
 
 public class Fundamental_Quiz_Winner extends AppCompatActivity {
     SessionManager sessionManager;
@@ -190,8 +189,8 @@ public class Fundamental_Quiz_Winner extends AppCompatActivity {
     public void OpenVideoPlayer(boolean QuizPlay) {
         Intent intent = new Intent(Fundamental_Quiz_Winner.this, VideoPlayer.class);
         intent.putExtra("QuizPlay", QuizPlay);
-        if (sessionManager.getWorkbook().getOther_link() != null && !sessionManager.getWorkbook().getOther_link().equalsIgnoreCase("")) {
-            intent.putExtra("FilePath", sessionManager.getWorkbook().getOther_link());
+        if (sessionManager.getWorkbook() != null && !sessionManager.getWorkbook().getVideolink().equalsIgnoreCase("")) {
+            intent.putExtra("FilePath", sessionManager.getWorkbook().getVideolink());
             intent.putExtra("FilePathOther", true);
             startActivity(intent);
         } else if (sessionManager.getWorkbook().getBanner_file() != null && !sessionManager.getWorkbook().getBanner_file().equalsIgnoreCase("")) {

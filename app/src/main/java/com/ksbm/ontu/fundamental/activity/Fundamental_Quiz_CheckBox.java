@@ -1,14 +1,12 @@
 package com.ksbm.ontu.fundamental.activity;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import com.bumptech.glide.Glide;
 import com.ksbm.ontu.R;
@@ -136,18 +134,21 @@ public class Fundamental_Quiz_CheckBox extends AppCompatActivity {
             binding.relToolbar.ivUsersideCoinImg.setVisibility(View.VISIBLE);
             binding.relToolbar.ivOntuSideCoin.setVisibility(View.INVISIBLE);
             binding.relToolbar.tvUserCoin.setText(""+got_total_reward);
+            Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_CheckBox.this);
+
         }else {
             got_ontu_total_reward = got_ontu_total_reward + Integer.parseInt(reward);
             binding.relToolbar.ivOntuSideCoin.setVisibility(View.VISIBLE);
             binding.relToolbar.ivUsersideCoinImg.setVisibility(View.INVISIBLE);
             binding.relToolbar.tvOntuCoin.setText(""+got_ontu_total_reward);
+            Utils.playMusic(R.raw.wrong_selected, Fundamental_Quiz_CheckBox.this);
         }
 
          int remain_coin= Integer.parseInt(binding.relToolbar.tvCoin.getText().toString()) -
                  Integer.parseInt(reward);
          binding.relToolbar.tvCoin.setText(""+remain_coin);
 
-         Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_CheckBox.this);
+//         Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_CheckBox.this);
     }
 
 

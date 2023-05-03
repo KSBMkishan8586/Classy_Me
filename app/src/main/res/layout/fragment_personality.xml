@@ -215,7 +215,7 @@
                             android:id="@+id/searchView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:queryHint="Search..."
+                            android:queryHint="@string/search"
                             android:iconifiedByDefault="false"
                             android:layout_gravity="center"
                             app:theme="@style/AppSearchView"

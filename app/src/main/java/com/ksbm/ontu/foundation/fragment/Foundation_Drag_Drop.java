@@ -1,10 +1,13 @@
 package com.ksbm.ontu.foundation.fragment;
 
+import static com.ksbm.ontu.foundation.activity.FoundationQuizActivity.userTotalReward;
+import static com.ksbm.ontu.utils.Constant.Passing_percent;
+import static com.ksbm.ontu.utils.Utils.calculateNoOfColumns;
+import static com.ksbm.ontu.utils.Utils.findWordForRightHanded;
+
 import android.annotation.SuppressLint;
 import android.content.ClipData;
 import android.content.Context;
-import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
@@ -16,6 +19,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -31,13 +35,9 @@ import com.ksbm.ontu.session.SessionManager;
 import com.ksbm.ontu.utils.Constant;
 import com.ksbm.ontu.utils.SweetAlt;
 import com.ksbm.ontu.utils.Utils;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.ksbm.ontu.foundation.activity.FoundationQuizActivity.userTotalReward;
-import static com.ksbm.ontu.utils.Constant.Passing_percent;
-import static com.ksbm.ontu.utils.Utils.calculateNoOfColumns;
-import static com.ksbm.ontu.utils.Utils.findWordForRightHanded;
 
 public class Foundation_Drag_Drop extends Fragment {
     FoundationTextDragDropBinding binding;
@@ -124,6 +124,7 @@ public class Foundation_Drag_Drop extends Fragment {
                         binding.relToolbar.tvOntuCoin.setText(""+quizDetails.getReward());
 
                         Utils.showToast(getActivity(), Constant.Wrong, false);
+                        Utils.playMusic(R.raw.coin_sound, context);
                     }
 
                 if(!isPlayed){

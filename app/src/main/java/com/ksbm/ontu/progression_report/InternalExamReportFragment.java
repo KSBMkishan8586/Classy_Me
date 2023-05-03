@@ -48,18 +48,18 @@ public class InternalExamReportFragment extends Fragment {
         if (meraSharedPreferance.isOpenMarketGet()){
             if (meraSharedPreferance.professionGet().equalsIgnoreCase("School Students")){
                 if (meraSharedPreferance.ageGet().equalsIgnoreCase("Below 13")){
-                    binding.internalExam.setText("Kids Learning");
-                    binding.situationTv.setText("Have Fun");
-                    binding.tvWorksheet.setText("Kids Learning");
-                    binding.tvSituation.setText("Have Fun");
+                    binding.internalExam.setText(getText(R.string.kids_learning));
+                    binding.situationTv.setText(getText(R.string.havefun));
+                    binding.tvWorksheet.setText(getText(R.string.kids_learning));
+                    binding.tvSituation.setText(getText(R.string.havefun));
                     binding.timeDevotionRl.setVisibility(View.GONE);
                     binding.timeDevotionLl.setVisibility(View.GONE);
 
                 }else if (meraSharedPreferance.ageGet().equalsIgnoreCase("Above 13")){
-                    binding.internalExam.setText("Crash Course");
-                    binding.situationTv.setText("Fundamental");
-                    binding.tvWorksheet.setText("Crash Course");
-                    binding.tvSituation.setText("Fundamental");
+                    binding.internalExam.setText(getText(R.string.crash_course));
+                    binding.situationTv.setText(getText(R.string.fundamental));
+                    binding.tvWorksheet.setText(getText(R.string.crash_course));
+                    binding.tvSituation.setText(getText(R.string.fundamental));
                     binding.timeDevotionRl.setVisibility(View.GONE);
                     binding.timeDevotionLl.setVisibility(View.GONE);
 
@@ -67,10 +67,10 @@ public class InternalExamReportFragment extends Fragment {
 
             }else {
 
-                binding.internalExam.setText("Crash Course");
-                binding.situationTv.setText("Situation");
-                binding.tvWorksheet.setText("Crash Course");
-                binding.tvSituation.setText("Situation");
+                binding.internalExam.setText(getText(R.string.crash_course));
+                binding.situationTv.setText(getText(R.string.situation));
+                binding.tvWorksheet.setText(getText(R.string.crash_course));
+                binding.tvSituation.setText(R.string.situation);
                 binding.timeDevotionRl.setVisibility(View.GONE);
                 binding.timeDevotionLl.setVisibility(View.GONE);
 

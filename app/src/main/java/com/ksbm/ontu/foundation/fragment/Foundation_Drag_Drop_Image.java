@@ -1,5 +1,9 @@
 package com.ksbm.ontu.foundation.fragment;
 
+import static com.ksbm.ontu.foundation.activity.FoundationQuizActivity.userTotalReward;
+import static com.ksbm.ontu.utils.Utils.calculateNoOfColumns;
+import static com.ksbm.ontu.utils.Utils.findWordForRightHanded;
+
 import android.annotation.SuppressLint;
 import android.content.ClipData;
 import android.content.Context;
@@ -33,10 +37,6 @@ import com.ksbm.ontu.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.ksbm.ontu.foundation.activity.FoundationQuizActivity.userTotalReward;
-import static com.ksbm.ontu.utils.Utils.calculateNoOfColumns;
-import static com.ksbm.ontu.utils.Utils.findWordForRightHanded;
 
 public class Foundation_Drag_Drop_Image extends Fragment {
     FoundationImageDragDropBinding binding;
@@ -181,7 +181,7 @@ public class Foundation_Drag_Drop_Image extends Fragment {
                         userTotalReward = userTotalReward + user_win_reward;
 
                         Utils.showToast(getActivity(), Constant.Right, true);
-
+                        Utils.playMusic(R.raw.coin_sound, context);
                     } else {
                         binding.result.append(Html.fromHtml("<font color=#FF0000>"+ wordQuizLists.get(position).getWord() + "</font>" + "<br/>"));
                         //  Toast.makeText(Fundamental_Quiz_Drag_Drop.this, "Wrong", Toast.LENGTH_SHORT).show();
@@ -194,11 +194,12 @@ public class Foundation_Drag_Drop_Image extends Fragment {
                         SweetAlt.OpenFreeCoinDialog(context, msg);
 
                         Utils.showToast(getActivity(), Constant.Wrong, false);
+                        Utils.playMusic(R.raw.wrong_selected, context);
                     }
 
                     wordResultStatusList.add(new WordResultStatus(wordQuizLists.get(position).getWord(),  wordQuizLists.get(position).getRightAnswer()));
                     quizDetails.setAttemptQuiz(true);
-                    Utils.playMusic(R.raw.coin_sound, context);
+
 
                     break;
             }

@@ -122,7 +122,6 @@ public class Fundamental_Quiz_Drag_Drop extends AppCompatActivity {
     }
 
 
-    @SuppressLint("ClickableViewAccessibility")
     private void setOnListner() {
 
         resultView.setOnDragListener(mydragListener);
@@ -266,7 +265,7 @@ public class Fundamental_Quiz_Drag_Drop extends AppCompatActivity {
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvUserCoin.setText(""+got_total_reward);
-
+                        Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Drag_Drop.this);
 
                     } else {
                         binding.result.append(Html.fromHtml("<font color=#FF0000>"+ wordQuizLists.get(position).getQuizWords() + "</font>" + "<br/>"));
@@ -282,6 +281,7 @@ public class Fundamental_Quiz_Drag_Drop extends AppCompatActivity {
 
                         String msg = "'" + wordQuizLists.get(position).getQuizWords() + "' " + "is " + wordQuizLists.get(position).getRightAnswer();
                         SweetAlt.OpenFreeCoinDialog(Fundamental_Quiz_Drag_Drop.this, msg);
+                        Utils.playMusic(R.raw.wrong_selected, Fundamental_Quiz_Drag_Drop.this);
                     }
 
                     int remain_coin= Integer.parseInt(binding.relToolbar.tvCoin.getText().toString()) -
@@ -289,7 +289,7 @@ public class Fundamental_Quiz_Drag_Drop extends AppCompatActivity {
                     binding.relToolbar.tvCoin.setText(""+remain_coin);
 
                     wordResultStatusList.add(new WordResultStatus(wordQuizLists.get(position).getQuizWords(),  wordQuizLists.get(position).getRightAnswer()));
-                    Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Drag_Drop.this);
+//                    Utils.playMusic(R.raw.coin_sound, Fundamental_Quiz_Drag_Drop.this);
                     break;
             }
 
@@ -335,7 +335,6 @@ public class Fundamental_Quiz_Drag_Drop extends AppCompatActivity {
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvUserCoin.setText(""+got_total_reward);
 
-
                     } else {
 
                         //Toast.makeText(Fundamental_Quiz_Start.this, "Wrong", Toast.LENGTH_SHORT).show();
@@ -351,9 +350,7 @@ public class Fundamental_Quiz_Drag_Drop extends AppCompatActivity {
                         String msg = "'" + wordQuizLists.get(position).getQuizWords() + "' " + "is " + wordQuizLists.get(position).getRightAnswer();
                         SweetAlt.OpenFreeCoinDialog(Fundamental_Quiz_Drag_Drop.this, msg);
 
-
                     }
-                    Utils.playMusic(R.raw.coin_sound,Fundamental_Quiz_Drag_Drop.this);
 
                     int remain_coin= Integer.parseInt(binding.relToolbar.tvCoin.getText().toString()) -
                             Integer.parseInt(wordQuizLists.get(position).getReward());
@@ -427,7 +424,7 @@ public class Fundamental_Quiz_Drag_Drop extends AppCompatActivity {
                     binding.relToolbar.tvCoin.setText(""+remain_coin);
 
                     wordResultStatusList.add(new WordResultStatus(wordQuizLists.get(position).getQuizWords(),  wordQuizLists.get(position).getRightAnswer()));
-                    Utils.playMusic(R.raw.coin_sound,Fundamental_Quiz_Drag_Drop.this);
+
                     break;
             }
 

@@ -96,7 +96,7 @@
                         android:layout_centerInParent="true"
                         android:layout_marginStart="@dimen/_5sdp"
                         android:gravity="center_vertical"
-                        android:text="Notification Alert !"
+                        android:text="@string/notification_alert"
                         android:textColor="@color/brown"
                         android:textSize="28sp">
 
@@ -146,22 +146,26 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/_5sdp">
-                <TextView
-                    android:id="@+id/tv_updates"
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:background="@drawable/round_box"
-                    android:gravity="center"
-                    android:backgroundTint="@color/yellow"
-                    android:padding="@dimen/_10sdp"
-                    android:text="@string/updates"
-                    android:textColor="@color/brown"
-                    android:textSize="@dimen/_16sdp"
-                    android:textStyle="bold">
 
-                </TextView>
+                    <TextView
+                        android:id="@+id/tv_updates"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/round_box"
+                        android:backgroundTint="@color/yellow"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/updates"
+                        android:textColor="@color/brown"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold">
+
+                    </TextView>
 
                     <TextView
                         android:id="@+id/tv_update_count"
@@ -197,7 +201,7 @@
                         android:gravity="center"
                         android:paddingLeft="@dimen/_10sdp"
                         android:paddingRight="@dimen/_10sdp"
-                        android:text="Notice\nBoard"
+                        android:text="@string/notice_nboard"
                         android:textColor="@color/brown"
                         android:textSize="@dimen/_14sdp"
                         android:textStyle="bold">
@@ -293,7 +297,7 @@
                         android:layout_margin="@dimen/_5sdp"
                         android:gravity="center"
                         android:padding="@dimen/_10sdp"
-                        android:text="Join Webinar"
+                        android:text="@string/join_webinar"
                         android:textColor="@color/brown"
                         android:textSize="@dimen/_18sdp"
                         android:textStyle="bold"

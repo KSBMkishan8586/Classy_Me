@@ -187,11 +187,11 @@
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_20sdp"
-                android:background="@drawable/rectangle_bg_grey"
+                android:background="@drawable/next_btn_bg"
                 android:gravity="center"
                 android:padding="@dimen/_5sdp"
                 android:text="Previous"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_14sdp"
                 android:textStyle="normal">
 

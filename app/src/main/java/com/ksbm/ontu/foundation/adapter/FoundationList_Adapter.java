@@ -1,17 +1,18 @@
 package com.ksbm.ontu.foundation.adapter;
 
+import static com.ksbm.ontu.utils.Constant.Colors;
+import static com.ksbm.ontu.utils.Constant.Date;
+import static com.ksbm.ontu.utils.Constant.Direction;
+import static com.ksbm.ontu.utils.Constant.Time;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -24,26 +25,13 @@ import com.ksbm.ontu.BR;
 import com.ksbm.ontu.R;
 import com.ksbm.ontu.custom_class.Speach_Record_Activity;
 import com.ksbm.ontu.databinding.FoundationListBinding;
-import com.ksbm.ontu.foundation.fragment.Foundation_Basics_Fragment;
 import com.ksbm.ontu.foundation.activity.Foundation_Splash;
+import com.ksbm.ontu.foundation.fragment.Foundation_Basics_Fragment;
 import com.ksbm.ontu.foundation.model.FoundationTypeModel;
-import com.ksbm.ontu.main_screen.DrawerActivity;
-import com.ksbm.ontu.main_screen.PaymentActivity;
 import com.ksbm.ontu.session.SessionManager;
-import com.ksbm.ontu.utils.ClickListionerss;
 import com.ksbm.ontu.utils.Constant;
-import com.ksbm.ontu.utils.MeraSharedPreferance;
-import com.ksbm.ontu.utils.SweetAlt;
-import com.wooplr.spotlight.SpotlightView;
 
 import java.util.List;
-
-import static com.ksbm.ontu.utils.Constant.Body_Parts;
-import static com.ksbm.ontu.utils.Constant.Colors;
-import static com.ksbm.ontu.utils.Constant.Date;
-import static com.ksbm.ontu.utils.Constant.Direction;
-import static com.ksbm.ontu.utils.Constant.Time;
-import static com.ksbm.ontu.utils.Constant.upgradePackage;
 
 public class FoundationList_Adapter extends RecyclerView.Adapter<FoundationList_Adapter.ViewHolder> {
     private List<FoundationTypeModel> dataModelList;
@@ -104,7 +92,7 @@ public class FoundationList_Adapter extends RecyclerView.Adapter<FoundationList_
 
                 } else if (position == 1) {
                     Constant.foundation_id = Direction;
-                    Constant.foundation_name = "Directions";
+                    Constant.foundation_name = activity.getString(R.string.directions);
 
                     Intent intent = new Intent(context, Foundation_Splash.class);
                     intent.putExtra("foundation_id", Constant.foundation_id);
@@ -113,7 +101,7 @@ public class FoundationList_Adapter extends RecyclerView.Adapter<FoundationList_
 
                 } else if (position == 2) {
                     Constant.foundation_id = Date;
-                    Constant.foundation_name = "Date";
+                    Constant.foundation_name = activity.getString(R.string.date);
 
                     Intent intent = new Intent(context, Foundation_Splash.class);
                     intent.putExtra("foundation_id", Constant.foundation_id);
@@ -121,21 +109,21 @@ public class FoundationList_Adapter extends RecyclerView.Adapter<FoundationList_
                     context.startActivity(intent);
                 } else if (position == 3) {
                     Constant.foundation_id = Time;
-                    Constant.foundation_name = "Time";
+                    Constant.foundation_name = activity.getString(R.string.time);
                     Intent intent = new Intent(context, Foundation_Splash.class);
                     intent.putExtra("foundation_id", Constant.foundation_id);
                     intent.putExtra("foundation_name", Constant.foundation_name);
                     context.startActivity(intent);
                 } else if (position == 4) {
                     Constant.foundation_id = Colors;
-                    Constant.foundation_name = "Colors";
+                    Constant.foundation_name =  activity.getString(R.string.colours);
                     Intent intent = new Intent(context, Foundation_Splash.class);
                     intent.putExtra("foundation_id", Constant.foundation_id);
                     intent.putExtra("foundation_name", Constant.foundation_name);
                     context.startActivity(intent);
                 } else if (position == 5) {
                     Constant.foundation_id = Constant.Body_Partsoriginal;
-                    Constant.foundation_name = "Body Parts";
+                    Constant.foundation_name =  activity.getString(R.string.body_parts);
                     Intent intent = new Intent(context, Foundation_Splash.class);
                     intent.putExtra("foundation_id", Constant.foundation_id);
                     intent.putExtra("foundation_name", Constant.foundation_name);

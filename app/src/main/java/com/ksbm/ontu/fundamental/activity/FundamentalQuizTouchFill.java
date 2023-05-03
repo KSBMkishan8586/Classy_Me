@@ -20,6 +20,7 @@ import com.ksbm.ontu.fundamental.model.quiz_touch_fill.Touch_FillWord;
 import com.ksbm.ontu.fundamental.model.quiz_touch_fill.Touch_Fill_Response;
 import com.ksbm.ontu.session.SessionManager;
 import com.ksbm.ontu.utils.SweetAlt;
+import com.ksbm.ontu.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,10 +45,8 @@ public class FundamentalQuizTouchFill extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_fundamental_quiz_touch_fill);
 
         sessionManager = new SessionManager(this);
-
         String arr[] = sessionManager.getUser().getFullname().split(" ", 2);
         String firstWord = arr[0];
-
         binding.relToolbar.tvLoggedUerName.setText(firstWord);
         binding.tvWorkbookname.setText(sessionManager.getWorkbook().getWorkbookName());
         binding.relToolbar.tvCoin.setText(sessionManager.getWorkbook().getReward());
@@ -186,6 +185,7 @@ public class FundamentalQuizTouchFill extends AppCompatActivity {
                 binding.relToolbar.ivUsersideCoinImg.setVisibility(View.VISIBLE);
                 binding.relToolbar.ivOntuSideCoin.setVisibility(View.INVISIBLE);
                 binding.relToolbar.tvUserCoin.setText(""+got_total_reward);
+                Utils.playMusic(R.raw.coin_sound, FundamentalQuizTouchFill.this);
 
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
@@ -212,6 +212,7 @@ public class FundamentalQuizTouchFill extends AppCompatActivity {
                 binding.relToolbar.ivOntuSideCoin.setVisibility(View.VISIBLE);
                 binding.relToolbar.ivUsersideCoinImg.setVisibility(View.INVISIBLE);
                 binding.relToolbar.tvOntuCoin.setText(""+got_ontu_total_reward);
+                Utils.playMusic(R.raw.wrong_selected, FundamentalQuizTouchFill.this);
 
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {

@@ -92,7 +92,7 @@ public class Fundamental_Quiz_Splash extends AppCompatActivity {
             } else if (sessionManager.getWorkbook().getQuiz_type().equalsIgnoreCase("objective")) {
                 Log.d(TagFundamental,"3");
                 getQuizMCQ(sessionManager.getWorkbook().getWorkbookId(), sessionManager.getWorkbook().getQuiz_type());
-            } else if (sessionManager.getWorkbook().getQuiz_type().equalsIgnoreCase("touch and fill or fill in the blanks")) {
+            } else if (sessionManager.getWorkbook().getQuiz_type().equalsIgnoreCase("touch and fill")) {
                 Log.d(TagFundamental,"4");
                 getQuizTouchFill(sessionManager.getWorkbook().getWorkbookId(), sessionManager.getWorkbook().getQuiz_type());
             } else if (sessionManager.getWorkbook().getQuiz_type().equalsIgnoreCase("match the following")) {
@@ -426,7 +426,7 @@ public class Fundamental_Quiz_Splash extends AppCompatActivity {
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        if (quiz_type.equalsIgnoreCase("touch and fill or fill in the blanks")) {
+                                        if (quiz_type.equalsIgnoreCase("touch and fill")) {
                                             Intent intent = new Intent(Fundamental_Quiz_Splash.this, FundamentalQuizTouchFill.class);
                                             intent.putExtra("QuizDetails", response.getResponse());
                                             intent.putExtra("quiz_id", response.getResponse().getQuizId());

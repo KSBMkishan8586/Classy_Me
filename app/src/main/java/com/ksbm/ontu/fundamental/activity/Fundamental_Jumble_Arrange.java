@@ -1,28 +1,21 @@
 package com.ksbm.ontu.fundamental.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-import androidx.recyclerview.widget.GridLayoutManager;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.ClipData;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Log;
-import android.util.TypedValue;
-import android.view.Display;
 import android.view.DragEvent;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import com.bumptech.glide.Glide;
 import com.ksbm.ontu.R;
@@ -46,7 +39,6 @@ import cn.pedant.SweetAlert.SweetAlertDialog;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
-import retrofit2.adapter.rxjava2.HttpException;
 
 public class Fundamental_Jumble_Arrange extends AppCompatActivity {
     ActivityFundamentalJumbleArrangeBinding binding;
@@ -168,6 +160,7 @@ public class Fundamental_Jumble_Arrange extends AppCompatActivity {
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvUserCoin.setText("" + got_total_reward);
+                        Utils.playMusic(R.raw.coin_sound, Fundamental_Jumble_Arrange.this);
                     } else {
                         result.setTextColor(getResources().getColor(R.color.red));
                         binding.ivIQuiz.setVisibility(View.VISIBLE);
@@ -180,6 +173,7 @@ public class Fundamental_Jumble_Arrange extends AppCompatActivity {
                         binding.relToolbar.ivOntuSideCoin.setVisibility(View.VISIBLE);
                         binding.relToolbar.ivUsersideCoinImg.setVisibility(View.INVISIBLE);
                         binding.relToolbar.tvOntuCoin.setText("" + got_ontu_total_reward);
+                        Utils.playMusic(R.raw.wrong_selected, Fundamental_Jumble_Arrange.this);
                     }
 
                     quizDetails.get(position).setQuizAttend(true);
@@ -188,7 +182,7 @@ public class Fundamental_Jumble_Arrange extends AppCompatActivity {
                             Integer.parseInt(quizDetails.get(position).getReward());
                     binding.relToolbar.tvCoin.setText("" + remain_coin);
 
-                    Utils.playMusic(R.raw.coin_sound, Fundamental_Jumble_Arrange.this);
+
                 }
             }
         });

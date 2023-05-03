@@ -50,6 +50,10 @@ public class Fundamental_Workbook_Data {
     @Expose
     private String play_status;
 
+    @SerializedName("video_link")
+    @Expose
+    private String video_link;
+
     public String getWorkbookId() {
         return workbookId;
     }
@@ -160,6 +164,14 @@ public class Fundamental_Workbook_Data {
 
     public String getOther_link() {
         return other_link;
+    }
+
+    public String getVideolink() {
+        return video_link;
+    }
+
+    public void setVideolink(String video_link) {
+        this.video_link = video_link;
     }
 
     public void setOther_link(String other_link) {

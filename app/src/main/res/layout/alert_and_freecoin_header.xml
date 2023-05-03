@@ -94,7 +94,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="@dimen/_5sdp"
                     android:gravity="center_vertical"
-                    android:text="Free Coins"
+                    android:text="@string/free_coin"
                     android:textSize="@dimen/_10sdp">
 
                 </TextView>

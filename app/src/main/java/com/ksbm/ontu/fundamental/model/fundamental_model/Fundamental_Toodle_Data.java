@@ -40,6 +40,10 @@ public class Fundamental_Toodle_Data implements Serializable {
     @Expose
     private String complete;
 
+    @SerializedName("video_link")
+    @Expose
+    private String video_link;
+
     public String getFundamentalId() {
         return fundamentalId;
     }
@@ -86,6 +90,14 @@ public class Fundamental_Toodle_Data implements Serializable {
 
     public String getOther_link() {
         return other_link;
+    }
+
+    public String getVideo_link() {
+        return video_link;
+    }
+
+    public void setVideo_link(String video_link) {
+        this.video_link = video_link;
     }
 
     public void setOther_link(String other_link) {
